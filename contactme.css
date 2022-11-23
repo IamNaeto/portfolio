@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:'Josefin Sans' Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* nav styling */
@@ -131,7 +133,7 @@ nav ul li a:hover{
     border:0px;
     border-bottom:3px solid rgba(255, 44, 90,0.5);
     padding:8px 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:18px;
     background:transparent;
     resize:none;

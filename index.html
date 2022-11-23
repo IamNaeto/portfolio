@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Charles O. Egesionu Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/dev.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 </head>
 <body>
     <!-- nav section starts -->
     <nav id="home">
         <div class="nav">
-            <h2 class="logo">Port<span><em>folio</em></span></h2>
+            <img src="img/dev.png" alt="" class="logo">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="contactme.html">Contact Me</a></li>
             </ul>
             <a href="#" class="btn">Download CV</a>
@@ -25,13 +29,16 @@
         <header class="content">
             <h4>Hello, my name is</h4>
             <h1>Charles <span>Obimnaetochukwu Egesionu</span></h1>
-            <h3>I'm a Software Engineer, a Frontend Web-Developer and a Virtual Assistant</h3>
-            <div class="newsletter">
-                <form action="#">
-                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                    <input type="submit" name="submit" value="Send Me Mail">
-                </form>
-            </div>
+            <!-- <h3>I'm a Software Engineer, a Frontend Web-Developer and a Virtual Assistant</h3> -->
+            <h3 class="cd-headline clip is-full-width">
+				<span>A Proficient: </span>
+				<span class="cd-words-wrapper">
+					<b class="is-visible">Frontend Developer</b>
+					<b>Full-Stack Software Engineer</b>
+					<b>Virtual Assistant</b>
+				</span>
+			</h3>
+            <a href="#" class="btn2">Download CV</a>
         </header>
     </nav>
 
@@ -48,7 +55,7 @@
                    social media management, transcribing, and everything related to administrative management. Outside working settings am a full time viber, I play 
                    badminton as a sport, I love food, cruise, movies, good musics and am a die-hard stan of Davido. Above all I love God, I fear Him and I have Zoe!
                 </p>
-                <button type="button">Let's Talk</button>
+                <button type="button"><a href="https://github.com/IamNaeto" target="_blank" >Github Profile</a></button>
                 </div>
         </div>
     </main>
@@ -106,50 +113,129 @@
 
     <!-- Projects -->
     <main id="projects"> 
-        <h3>My Projects.</h3>
-         <p>Here are some of my projects, you may like.</p>
-         <div class="work-box">
-         <div class="work">
-       <!--───────────────card───────────────-->
-           <div class="cardpng">
-               <img class="work-img" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
-               <a href="https://codepen.io/iamnaeto/full/KKRxyGy" target="_blank"> <!--Link to project-->
-               <div class="work-content">Designed a tribute page for my favourite past hero.</div></a>
-           </div>
-           <div class="cardpng">
-               <img class="work-img" src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80">
-               <a href="https://codepen.io/iamnaeto/full/MWGBazz" target="_blank"> <!--Link to project-->
-               <div class="work-content">Designed students database table page for Mr. Ade.</div></a>
-           </div>
-           <div class="cardpng">
-               <img class="work-img" src="https://images.unsplash.com/photo-1485815457792-d1a966f9bde0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-               <a href="#" target="_blank"> <!--Link to project-->
-               <div class="work-content">In progress...</div></a>
-           </div>
-           <div class="cardpng">
-               <img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-               <a href="#" target="_blank"> <!--Link to project-->
-               <div class="work-content">In progress...</div></a>
-           </div> 
-           <div class="cardpng">
-               <img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
-               <a href="#" target="_blank"> <!--Link to project-->
-               <div class="work-content">In progress...</div></a>
-           </div>
-           <div class="cardpng">
-               <img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-               <a href="#" target="_blank"> <!--Link to project-->
-               <div class="work-content">In progress...</div></a>
-           </div> 	  
-         </div>
-         </div>
+        <h2>My Projects</h2>
+         <h3>Here are some of my projects, you may like</h3>
+         <div class="row">
+            <div class="project-col">
+                <img src="img/crappo.png" alt="">
+                <div class="text">
+                    <h4>CRAPPO-CRYPTO</h4>
+                <p>A buy and sell free cryptocurreny website for trading, investing, growing and tracking investments.</p>
+                <button type="button"><a href="https://crappo-free-crypto-site.netlify.app/" target="_blank">Visit Site</a></button>
+                </div>
+            </div>
+
+            <div class="project-col">
+                <img src="img/edford.png" alt="">
+               <div class="text">
+                <h4>EDUFORD</h4>
+                <p>A university website that displays the university about, facilities, activites, online courses and blogs.</p>
+                <button type="button"><a href="https://eduford-versity.netlify.app/" target="_blank">Visit Site</a></button>
+               </div>
+            </div>
+
+            <div class="project-col">
+                <img src="img/what2eat.png" alt="">
+                <div class="text">
+                    <h4>WHAT2EAT</h4>
+                <p>A UK based courier service in which authentic home cook food is delivered to a customer on order.</p>
+                <button type="button"><a href="https://what2eat-kitchen.netlify.app/" target="_blank">Visit Site</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="project-col">
+                <img src="img/zuri.png" alt="">
+                <div class="text">
+                    <h4>ZURI PAGE</h4>
+                <p>A replicated version of Zuri website that displays the landing page, dashboard, login page and forget password page of the website</p>
+                <button type="button"><a href="https://zuriboard-pages.netlify.app/" target="_blank">Visit Site</a></button>
+                </div>
+            </div>
+
+            <div class="project-col">
+                <img src="img/fashionistar.png" alt="">
+               <div class="text">
+                <h4>FASHIONISTAR</h4>
+                <p>A tech leap shooping website that displays a wide range of men, kids and ladies assorted wears which are delivered on order.</p>
+                <button type="button"><a href="https://fashionistar-shopping.netlify.app/" target="_blank">Visit Site</a></button>
+               </div>
+            </div>
+
+            <div class="project-col">
+                <img src="img/netflix-clone.png" alt="">
+                <div class="text">
+                    <h4>NETFLIX CLONE</h4>
+                <p>A replicated version of netflix landing page that displays netflix about, frequently asked questions and sign in</p>
+                <button type="button"><a href="https://netflix-replicate.netlify.app/" target="_blank">Visit Site</a></button>
+                </div>
+            </div>
+        </div>
      </main>
 
-    <!-- Contact Me Start -->
-    <div class="contact-me">
-        <p>Let Me Get You A Beautiful Website.</p>
-        <a class="button-two" href="#">Hire Me!</a>
-    </div>
+    <!-- Skills Start -->
+    <main class="skills" id="skills">
+        <h2>My Skills</h2>
+        <p>Below are the languages and frame-works that I'm skilled with and my level of proficiency</p>
+        <div class="skills-col">
+            <div class="lang">
+                <div>
+                    <h3>Languages</h3>
+                <progress id="progress" value="100" max="100"> 32% </progress><label for="label">HTML</label><br /><br />
+                <progress id="progress" value="100" max="100"> 32% </progress><label for="label">CSS</label><br /><br />
+                <progress id="progress" value="50" max="100"> 32% </progress><label for="label">JavaScript</label><br /><br />
+                <progress id="progress" value="75" max="100"> 32% </progress><label for="label">C Programming</label><br /><br />
+                <progress id="progress" value="32" max="100"> 32% </progress><label for="label">React-Js</label><br /><br />
+                <progress id="progress" value="20" max="100"> 32% </progress><label for="label">Python</label><br /><br />
+                </div>
+            </div>
+            <div  class="framework">
+                <h3>Frame-Works</h3>
+            <progress id="progress" value="20" max="100"> 32% </progress><label for="label">Bootsrap</label><br /><br />
+            <progress id="progress" value="20" max="100"> 32% </progress><label for="label">Tailwind CSS</label><br /><br />
+            <progress id="progress" value="32" max="100"> 32% </progress><label for="label">Django</label><br /><br />
+            </div>
+        </div>
+    </main>
+
+    <!--------- testimonials------------->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Clients Says</h2>
+        <h3>Below are the testimonials of our clients</h3>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="img/user1.jpg" alt="">
+                <div>
+                    <p>With Charles’s help, we were able to increase the functionality of our website dramatically while cutting our costs. Our website is much more easy to use, has tons of more features than before and is incredibly easy to maintain. We could not be more happy with our new website! Thanks Charles!</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <img src="img/user2.jpg" alt="">
+                <div>
+                    <p>Charles listened to everything we needed and wanted in a new website, then delivered it! Our new website is fun, exciting and easy to use for me and our audiences. I have gone through website redesigns before, and by far, this one was the easiest and least painful. I was listened to and respected through every step. We couldn’t be happier with our new website</p>
+                    <h3>David Byer</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hire">
+            <h4>Let Me Get You A Beautiful Website.</h4>
+            <button type="button"><a href="contactme.html">Hire Me!</a></button>
+        </div>
+    </section>
 
     <!-- Footer Start -->
     <footer>
@@ -193,5 +279,7 @@
 
         <p class="end">&#169; 2022 Charles Obimnaetochukwu Egesionu</p>
     </footer>
+
+    <script src="headline.copied.js"></script>
 </body>
 </html>
