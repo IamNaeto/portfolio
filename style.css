@@ -131,7 +131,7 @@ h4 {
 .cd-headline.clip span {
   display: inline-block;
   padding: 0.2em 0;
-  color: #05073a;
+  color: #fff;
   font-size: 30px;
 }
 .cd-headline.clip span b {
@@ -148,7 +148,7 @@ h4 {
   right: 0;
   width: 2px;
   height: 100%;
-  background-color: #05073a;
+  background-color: #fff;
 }
 .cd-headline.clip b {
   opacity: 0;
@@ -733,6 +733,10 @@ footer p {
   }
   h1 {
     font-size: 30px;
+  }
+  h1 > span{
+    color: #fff;
+    text-shadow: 1px 1px 2px #ae0900;
   }
   h4 {
     font-size: 18px;
