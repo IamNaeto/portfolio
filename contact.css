@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(265deg,  #05073a, #dc0906ca);
+    height: 100%
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    width: 80px;
+    height: 60px;
+}
+
+.nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.btn{
+    background-color: firebrick;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+#contact{
+    margin: 0px 50px;
+}
+.contact-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.col-box{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.col-box span{
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.col-box img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+/* Form */
+form input {
+    width:100%;
+    margin:20px 1%;
+    background:transparent;
+    border:0px;
+    border-bottom:3px solid #808080;
+    padding:8px 10px;
+    font-size:18px;
+    transition:0.4s ease-in-out;
+    color: white;
+    font-weight:bold;
+}
+form input::placeholder{
+    color: white;
+}
+form textarea::placeholder{
+    color: white;
+}
+form textarea{
+    width:100%;
+    margin:20px 1%;
+    padding:8px 10px;
+    border:0px;
+    border-bottom:3px solid #808080;
+    padding:8px 10px;
+    font-size:18px;
+    background:transparent;
+    resize:none;
+    transition:0.4s ease-in-out;
+    color: white;
+    font-weight:bold;
+}
+form input:focus {
+    outline:none;
+    border-bottom:3px solid #fff;
+}
+form textarea:focus {
+    outline:none;
+    border-bottom:3px solid #fff;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+    margin:20px 10px;
+}
+.social img:hover { 
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: .3s;
+}
+.btn_one{
+    background-color: firebrick;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 100px;
+    border-radius: 30px;
+    transition: .4s;
+    box-shadow: 2px 2px 1px 1px #fff;
+    margin-bottom: 20px;
+}
+
+.btn_one:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+#footer p{
+        color: white;
+        font-size: 17px;
+        text-align: center;
+        line-height: 26px;
+    }
+
+    @media screen and (max-width: 760px) {
+        .logo{
+            width: 40px;
+            height: 30px;
+        }
+        .col-box span{
+            font-size: 12px;
+        }
+        
+        .col-box img{
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+        }
+        .contact-col{
+            flex-direction:column-reverse;
+        }
+        .col-form{
+            padding: 0px;
+            margin-bottom: 30px;
+        }
+
+        .btn_one{
+            width: 150px;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+        }
+
+        #footer p{
+            font-size: 13px;
+            line-height: 13px;
+            padding: 30px 0px;
+        }
+        .social img{
+            margin:10px 10px;
+        }
+        .col-box{
+            margin-bottom: 10px;
+        }
+    }

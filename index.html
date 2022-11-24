@@ -14,16 +14,20 @@
     <nav id="home">
         <div class="nav">
             <img src="img/dev.png" alt="" class="logo">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>
-            </ul>
-            <a href="#" class="btn">Download CV</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a href="asset/Charles O. Egesionu Resume.pdf" target="_blank" download="Charles O. Egesionu Resume" class="btn">Download Resume</a>
         </div>
 
         <header class="content">
@@ -38,7 +42,7 @@
 					<b>Virtual Assistant</b>
 				</span>
 			</h3>
-            <a href="#" class="btn2">Download CV</a>
+            <a href="asset/Charles O. Egesionu Resume.pdf" target="_blank" download="Charles O. Egesionu Resume" class="btn2">Download Resume</a>
         </header>
     </nav>
 
@@ -50,7 +54,7 @@
                 <h2>About Me</h2>
                 <h5><span> Frontend Developer |</span> Software Engineer | Virtual Assistant</h5>
                 <p>I am a front-end web developer and a full-stack software engineering student at ALX Holberton School. 
-                   I can provide clean code and pixel perfect design. I also make the website more and more interactive with web animations. 
+                   I can provide clean code and pixel perfect design. I also make the website responsive and more interactive with web animations. 
                    A responsive design makes our website accessible to all users, regardless of their device. I'm also a certified virtual assitant specialized in 
                    social media management, transcribing, and everything related to administrative management. Outside working settings am a full time viber, I play 
                    badminton as a sport, I love food, cruise, movies, good musics and am a die-hard stan of Davido. Above all I love God, I fear Him and I have Zoe!
@@ -76,7 +80,7 @@
                         devices. Secondly, I design it to be fast and interactive as possible.</p>
 
                     <p style="text-align:center">
-                        <a href="#" class="button">Read More</a>
+                        <a href="#" class="button">Read More...</a>
                     </p>
                 </div>
             </div>
@@ -90,7 +94,7 @@
                     </p>
 
                     <p style="text-align:center">
-                        <a href="#" class="button">Read More</a>
+                        <a href="#" class="button">Read More...</a>
                     </p>
                 </div>
             </div>
@@ -104,7 +108,7 @@
                     making travel arrangements, managing social media accounts and managing email accounts.</p>
 
                     <p style="text-align:center">
-                        <a href="#" class="button">Read More</a>
+                        <a href="#" class="button">Read More...</a>
                     </p>
                 </div>
             </div>
@@ -114,7 +118,7 @@
     <!-- Projects -->
     <main id="projects"> 
         <h2>My Projects</h2>
-         <h3>Here are some of my projects, you may like</h3>
+         <h3>Here are some of my projects, you may like.</h3>
          <div class="row">
             <div class="project-col">
                 <img src="img/crappo.png" alt="">
@@ -177,24 +181,37 @@
     <!-- Skills Start -->
     <main class="skills" id="skills">
         <h2>My Skills</h2>
-        <p>Below are the languages and frame-works that I'm skilled with and my level of proficiency</p>
+        <p>Below are the soft skills, languages and frame-works that I'm skilled with and my level of proficiency.</p>
         <div class="skills-col">
             <div class="lang">
                 <div>
                     <h3>Languages</h3>
-                <progress id="progress" value="100" max="100"> 32% </progress><label for="label">HTML</label><br /><br />
-                <progress id="progress" value="100" max="100"> 32% </progress><label for="label">CSS</label><br /><br />
-                <progress id="progress" value="50" max="100"> 32% </progress><label for="label">JavaScript</label><br /><br />
-                <progress id="progress" value="75" max="100"> 32% </progress><label for="label">C Programming</label><br /><br />
-                <progress id="progress" value="32" max="100"> 32% </progress><label for="label">React-Js</label><br /><br />
-                <progress id="progress" value="20" max="100"> 32% </progress><label for="label">Python</label><br /><br />
+                <progress id="progress" value="100" max="100"></progress><label for="label">HTML</label><br /><br />
+                <progress id="progress" value="100" max="100"></progress><label for="label">CSS</label><br /><br />
+                <progress id="progress" value="75" max="100"></progress><label for="label">C Programming</label><br /><br />
+                <progress id="progress" value="50" max="100"></progress><label for="label">JavaScript</label><br /><br />
+                <progress id="progress" value="32" max="100"></progress><label for="label">React-Js</label><br /><br />
+                <progress id="progress" value="20" max="100"></progress><label for="label">Python</label><br /><br />
+                <progress id="progress" value="20" max="100"></progress><label for="label">C#</label><br /><br />
+                <progress id="progress" value="20" max="100"></progress><label for="label">Java</label><br /><br />
                 </div>
             </div>
-            <div  class="framework">
+            <div  class="frame-works">
                 <h3>Frame-Works</h3>
-            <progress id="progress" value="20" max="100"> 32% </progress><label for="label">Bootsrap</label><br /><br />
-            <progress id="progress" value="20" max="100"> 32% </progress><label for="label">Tailwind CSS</label><br /><br />
-            <progress id="progress" value="32" max="100"> 32% </progress><label for="label">Django</label><br /><br />
+            <progress id="progress" value="20" max="100"></progress><label for="label">Bootsrap</label><br /><br />
+            <progress id="progress" value="20" max="100"></progress><label for="label">Tailwind CSS</label><br /><br />
+            <progress id="progress" value="20" max="100"></progress><label for="label">Django</label><br /><br />
+            </div>
+            <div  class="Soft-Skills">
+                <h3>Soft-Skills</h3>
+            <progress id="progress" value="100" max="100"></progress><label for="label">Team-Work</Team-Work></label><br /><br />
+            <progress id="progress" value="100" max="100"></progress><label for="label">Communication</label><br /><br />
+            <progress id="progress" value="100" max="100"></progress><label for="label">Organization</label><br /><br />
+            <progress id="progress" value="100" max="100"></progress><label for="label">Time-Management</label><br /><br />
+            <progress id="progress" value="100" max="100"></progress><label for="label">Confidentiality</label><br /><br />
+            <progress id="progress" value="100" max="100"></progress><label for="label">Self-Learning</label><br /><br />
+            <progress id="progress" value="100" max="100"></progress><label for="label">Problem Solving</label><br /><br />
+            <progress id="progress" value="100" max="100"></progress><label for="label">Open Source Collaboration</label><br /><br />
             </div>
         </div>
     </main>
@@ -232,8 +249,8 @@
             </div>
         </div>
         <div class="hire">
-            <h4>Let Me Get You A Beautiful Website.</h4>
-            <button type="button"><a href="contactme.html">Hire Me!</a></button>
+            <h4>Need A Beautiful Website?</h4>
+            <button type="button"><a href="contact.html">Let's Talk!</a></button>
         </div>
     </section>
 
@@ -280,6 +297,17 @@
         <p class="end">&#169; 2022 Charles Obimnaetochukwu Egesionu</p>
     </footer>
 
-    <script src="headline.copied.js"></script>
+    <script src="script-headline.js"></script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
