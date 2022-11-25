@@ -97,65 +97,20 @@ h1 > span {
 
 h3 {
   color: #05073a;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 50px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #fff;
 }
-
+h3 span{
+  font-size: 35px;
+  color: #ae0900;
+}
 h4 {
   color: #05073a;
   letter-spacing: 2px;
   font-size: 20px;
-}
-
-.cd-words-wrapper {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-}
-.cd-words-wrapper b {
-  display: inline-block;
-  position: absolute;
-  white-space: nowrap;
-  left: 0;
-  top: 0;
-}
-.cd-words-wrapper b.is-visible {
-  position: relative;
-}
-.no-js .cd-words-wrapper b {
-  opacity: 0;
-}
-.no-js .cd-words-wrapper b.is-visible {
-  opacity: 1;
-}
-
-.cd-headline.clip span {
-  display: inline-block;
-  padding: 0.2em 0;
-  color: #05073a;
-  font-size: 30px;
-}
-.cd-headline.clip span b {
-  text-transform: uppercase;
-}
-.cd-headline.clip .cd-words-wrapper {
-  overflow: hidden;
-  vertical-align: top;
-}
-.cd-headline.clip .cd-words-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background-color: #05073a;
-}
-.cd-headline.clip b {
-  opacity: 0;
-}
-.cd-headline.clip b.is-visible {
-  opacity: 1;
+  text-shadow: 1px 1px 2px #fff;
 }
 .btn2 {
   background-color: #ae0900;
@@ -542,8 +497,8 @@ footer p {
 /* ------------Media Query------------- */
 @media screen and (max-width: 1122px) {
   .logo {
-    width: 60px;
-    height: 30px;
+    width: 70px;
+    height: 50px;
   }
   h1 {
     font-size: 40px;
@@ -551,9 +506,6 @@ footer p {
   }
   h4 {
     font-size: 24px;
-  }
-  .cd-headline.clip span {
-    font-size: 30px;
   }
   .btn2 {
     padding: 15px 30px;
@@ -692,7 +644,7 @@ footer p {
   #home {
     height: 100vh;
     width: 100%;
-    background-color: #b7b8d6;
+    background-color: #c8c8d4;
     background-image:url(img/mobile2\ \(1\).jpg);
     background-size: cover;
     background-position: center;
@@ -769,7 +721,7 @@ footer p {
     display: block;
   }
   h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
   h1 > span{
     color: #fff;
@@ -780,13 +732,13 @@ footer p {
     color: #fff;
     text-shadow: 1px 1px 2px #05073a;
   }
-  .cd-headline.clip span {
-    font-size: 20px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #05073a;
+  h3 {
+    font-size: 30px;
   }
-  .cd-headline.clip .cd-words-wrapper::after {
-    background-color: #fff;
+  h3 span{
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #ae0900;
   }
   .btn2 {
     padding: 15px 15px;
