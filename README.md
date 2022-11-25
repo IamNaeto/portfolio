@@ -1,5 +1,5 @@
 # Welcome to my portfolio repo
-- This portfolio website contains all you need to know about me. It's developed with ``HTML`` and ``CSS`` and JavaScript and it's purely responsive and interactive.
+- This portfolio website contains all you need to know about me. It's developed with ``HTML`` and ``CSS`` and ``JavaScript`` and it's purely responsive and interactive.
 
 	- Live Link :: [Go Live](https://iamnaeto.github.io/portfolio/)
 	
