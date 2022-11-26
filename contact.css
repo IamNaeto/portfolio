@@ -167,6 +167,34 @@ form textarea:focus {
   line-height: 26px;
 }
 
+/* Success Page */
+.success{
+  width: 40%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.success img{
+  width: 200px;
+  height: 200px;
+}
+.success h1{
+  color: #006300;
+  font-size: 60px;
+  text-align: center;
+  padding: 10px;
+}
+.success p{
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
 @media screen and (max-width: 760px) {
   .logo {
     width: 40px;
@@ -264,5 +292,23 @@ form textarea:focus {
   }
   .col-box {
     margin-bottom: 10px;
+  }
+
+  /* Success Page */
+  .success{
+    width: 250px;
+    margin: 150px auto;
+  }
+  .success img{
+    width: 100px;
+    height: 100px;
+  }
+  .success h1{
+    font-size: 40px;
+    padding: 10px;
+  }
+  .success p{
+    font-size: 13px;
+    padding: 3px;
   }
 }
