@@ -299,22 +299,4 @@ form textarea:focus {
     line-height: 13px;
     padding: 30px 0px;
   }
-
-  /* Success Page */
-  .success{
-    width: 250px;
-    margin: 150px auto;
-  }
-  .success img{
-    width: 100px;
-    height: 100px;
-  }
-  .success h1{
-    font-size: 40px;
-    padding: 10px;
-  }
-  .success p{
-    font-size: 13px;
-    padding: 3px;
-  }
 }
