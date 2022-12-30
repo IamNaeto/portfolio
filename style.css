@@ -280,7 +280,7 @@ h5 {
   text-decoration: none;
   border: 2px solid transparent;
   font-weight: bold;
-  padding: 9px 22px;
+  padding: 13px 22px;
   border-radius: 30px;
   transition: 0.4s;
   box-shadow: 2px 2px 1px 1px #fff;
@@ -328,6 +328,7 @@ h5 {
 }
 .project-col button {
   margin: 10px 0px 10px 10px;
+  padding: 13px 25px;
 }
 .project-col:hover {
   box-shadow: 1px 1px 4px 4px #fff;
@@ -516,7 +517,7 @@ footer p {
 }
 
 /* ------------Media Query------------- */
-@media screen and (max-width: 1122px) {
+@media screen and (max-width: 1300px) {
   .logo {
     width: 70px;
     height: 50px;
@@ -607,6 +608,10 @@ footer p {
   .project-col {
     width: 90%;
     margin: 30px 10px;
+  }
+    .project-col button {
+    margin: 10px 0px 10px 10px;
+    padding: 12px 18px;
   }
   /* SKills */
   .skills-col {
@@ -901,5 +906,4 @@ footer p {
     font-size: 14px;
     width: 300px;
   }
-
 }
