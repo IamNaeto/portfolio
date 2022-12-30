@@ -9,7 +9,7 @@
 }
 body {
   background: linear-gradient(265deg, #05073a, #dc0906ca);
-  height: 100%;
+  height: 100vh;
 }
 
 .nav {
@@ -182,6 +182,9 @@ form textarea:focus {
   line-height: 26px;
 }
 @media screen and (max-width: 760px) {
+  body{
+    height: 100%;
+  }
   .logo {
     width: 40px;
     height: 30px;
