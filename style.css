@@ -153,6 +153,20 @@ h4 {
   height: auto;
   width: 430px;
   border-radius: 10px;
+  position: relative;
+}
+.img-sec{
+  position: relative;
+}
+.line-design{
+  border: 5px solid #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -20px;
+  right: 25px;
+  z-index: -1;
 }
 
 .about-text {
@@ -553,10 +567,22 @@ footer p {
   .main {
     overflow: hidden;
   }
-  #about img {
+  /* #about img {
     height: auto;
     width: 350px;
     margin-right: 20px;
+  } */
+  #about img {
+    height: auto;
+    width: 280px;
+    overflow: hidden;
+    left: 20px;
+    margin-right: 40px;
+  }
+  .line-design{
+    width: 85%;
+    bottom: -15px;
+    right: 45px;
   }
 
   .about-text {
@@ -780,10 +806,16 @@ footer p {
     height: auto;
     width: 300px;
     overflow: hidden;
+    left: 30px;
+  }
+  .line-design{
+    width: 90%;
+    bottom: -20px;
+    right: 25px;
   }
   .about-text h2 {
     font-size: 50px;
-    margin: 20px 20px 10px 20px;
+    margin: 30px 20px 10px 20px;
   }
 
   .about-text h5 {
