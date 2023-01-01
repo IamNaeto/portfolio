@@ -159,7 +159,7 @@ h4 {
   position: relative;
 }
 .line-design{
-  border: 5px solid #fff;
+  border: 10px solid #fff;
   height: 100%;
   width: 100%;
   border-radius: 10px;
@@ -804,7 +804,7 @@ footer p {
   }
   #about img {
     height: auto;
-    width: 300px;
+    width: 280px;
     overflow: hidden;
     left: 30px;
   }
@@ -826,6 +826,7 @@ footer p {
   .about-text p {
     font-size: 16px;
     margin: 0px 20px 45px 20px;
+    letter-spacing: 0;
   }
   button {
     margin: 0px 10px 10px 20px;
@@ -889,7 +890,8 @@ footer p {
     font-size: 1rem;
     margin-bottom: 0px;
     width: 340px;
-    margin-left: 8px;
+    margin: auto;
+    /* margin-left: 8px; */
   }
   #progress {
     height: 30px;
