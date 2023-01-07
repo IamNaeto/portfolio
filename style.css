@@ -8,7 +8,8 @@
   scroll-behavior: smooth;
 }
 body{
-  background: linear-gradient(260deg, #05073a, #dc0906ca);
+  /* background: linear-gradient(260deg, #05073a, #dc0906ca); */
+  background: linear-gradient(260deg, #05073a, #961f17, #05073a);
 }
 /* nav styling */
 #home {
