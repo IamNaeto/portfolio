@@ -49,20 +49,6 @@ body {
   text-transform: capitalize;
 }
 
-.btn {
-  background-color: firebrick;
-  color: white;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 30px;
-  transition: transform 0.4s;
-}
-
-.btn:hover {
-  transform: scale(1.2);
-}
 #contact {
   margin: 50px 100px;
 }
@@ -164,7 +150,7 @@ form textarea:focus {
   border: 2px solid transparent;
   font-weight: bold;
   padding: 10px 100px;
-  border-radius: 30px;
+  border-radius: 10px;
   transition: 0.4s;
   box-shadow: 2px 2px 1px 1px #fff;
   margin-bottom: 20px;
@@ -263,7 +249,7 @@ form textarea:focus {
   }
 
   .btn_one {
-    width: 150px;
+    width: 300px;
     padding: 10px 20px;
     margin-bottom: 30px;
   }
