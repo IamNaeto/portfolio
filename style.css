@@ -65,7 +65,7 @@ body{
   border: 2px solid transparent;
   font-weight: bold;
   padding: 10px 25px;
-  border-radius: 30px;
+  border-radius: 10px;
   transition: transform 0.4s;
   box-shadow: 2px 2px 1px 1px #fff;
 }
@@ -123,7 +123,7 @@ h4 {
   border: 2px solid transparent;
   font-weight: bold;
   padding: 10px 25px;
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: 2px 2px 1px 1px #fff;
   display: none;
 }
@@ -222,7 +222,7 @@ button {
   background-color: firebrick;
   border: 2px solid transparent;
   padding: 13px 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   transition: 0.4s;
   box-shadow: 2px 2px 1px 1px #fff;
 }
@@ -254,17 +254,12 @@ button:hover {
   min-height: 400px;
 }
 
-.cardimg {
-  width: 40px;
-  height: 40px;
-  background: transparent;
-}
-
 .card {
   height: 450px;
   width: 335px;
   padding: 20px 35px;
-  background: linear-gradient(135deg, #dc0906ca, #05073a);
+  /* background: linear-gradient(135deg, #dc0906ca, #05073a); */
+  box-shadow: 1px 1px 4px 4px #fff;
   border-radius: 20px;
   margin: 15px;
   position: relative;
@@ -296,7 +291,7 @@ h5 {
   border: 2px solid transparent;
   font-weight: bold;
   padding: 13px 22px;
-  border-radius: 30px;
+  border-radius: 10px;
   transition: 0.4s;
   box-shadow: 2px 2px 1px 1px #fff;
 }
@@ -338,7 +333,7 @@ h5 {
   border-radius: 10px;
   width: 70%;
   margin: 30px;
-  box-shadow: 0px 0px 1px 1px #fff;
+  box-shadow: 1px 1px 4px 4px #fff;
   transition: transform 0.4s;
 }
 .project-col button {
@@ -346,8 +341,8 @@ h5 {
   padding: 13px 25px;
 }
 .project-col:hover {
-  box-shadow: 1px 1px 4px 4px #fff;
-  background: linear-gradient(135deg, #dc0906ca, #05073a);
+cursor: pointer;
+  /* background: linear-gradient(135deg, #dc0906ca, #05073a); */
   transform: scale(1.1);
 }
 .project-col img {
@@ -443,11 +438,27 @@ label {
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
-  background: #fff3f3;
+  /* background: #fff3f3; */
+  box-shadow: 1px 1px 4px 4px #fff;
   padding: 25px;
   display: flex;
   margin: 50px 20px 100px;
+  transition: 0.4s;
 }
+.testimonial-col:hover{
+    background: #fff3f3;
+    box-shadow: none;
+    cursor: pointer
+}
+.testimonial-col:hover p{
+color: #000;
+}
+.testimonial-col:hover h3{
+    color: #05073a;
+  }
+  .testimonial-col:hover .fa{
+    color: #f44336;
+  }
 .testimonial-col img {
   height: 40px;
   margin-left: 5px;
@@ -457,15 +468,19 @@ label {
 .testimonial-col p {
   padding: 0;
   text-align: justify;
+  color: #fff;
+  transition: 0.4s;
 }
 
 .testimonial-col h3 {
   margin-top: 15px;
   text-align: left;
-  color: #05073a;
+  color: #fff;
+  transition: 0.4s;
 }
 .testimonial-col .fa {
-  color: #f44336;
+  color: #fff;
+  transition: 0.4s;
 }
 .testimonials h4 {
   color: white;
@@ -482,7 +497,7 @@ label {
   border: 2px solid transparent;
   font-weight: bold;
   padding: 13px 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   transition: 0.4s;
   box-shadow: 2px 2px 1px 1px #fff;
   margin-bottom: 100px;
@@ -688,7 +703,6 @@ footer p {
   .testimonial-col h3 {
     margin-top: 15px;
     text-align: left;
-    color: #05073a;
     margin-bottom: 15px;
   }
 }
@@ -920,7 +934,7 @@ footer p {
     margin: 0px;
   }
   .testimonial-col {
-    margin: 50px 20px 50px;
+    margin: 50px 20px 10px 20px;
     overflow: hidden;
   }
   .testimonial-col p {
