@@ -143,6 +143,7 @@ h4 {
   display:inline-flex;
   font-size: 40px;
   margin-top: 90px;
+  transition: 0.3s;
 }
 .content .arrow-down .fa:hover{
   transform: scale(1.3);
