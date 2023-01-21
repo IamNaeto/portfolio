@@ -801,6 +801,9 @@ footer p {
   .btn2 {
     display: block;
   }
+  .content {
+    margin-top: 80px;
+  }
   h1 {
     font-size: 30px;
   }
