@@ -384,7 +384,7 @@ cursor: pointer;
   color: #fff;
   text-align: center;
 }
-.skillset p {
+.skillset h3 {
   font-size: 1.2rem;
   color: #fff;
   letter-spacing: 2px;
@@ -394,17 +394,22 @@ cursor: pointer;
 }
 .skillset .langbox{
   width: 100%;
+  cursor: pointer;
+}
+.skillset .langbox:hover i {
+  transform: scale(1.5);
 }
 .skillset i{
   font-size: 50px;
   color: #fff;
   text-align: center;
+  transition: transform 0.4s;
 }
 .langbox h1{
   font-size: 24px;
   color: #fff;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 .langbox hr{
