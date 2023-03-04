@@ -6,3 +6,9 @@ hamMenu.addEventListener('click', () =>{
 	offScreenMenu.classList.toggle('active')
 })
 // Hamburger script end
+
+// Nav Bar Scrolling Change
+window.addEventListener("scroll", function() {
+	let navbar = document.querySelector(".nav");
+	navbar.classList.toggle("scrolled", window.scrollY > 0);
+  });

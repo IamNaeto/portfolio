@@ -704,6 +704,7 @@ footer p {
   .logo {
     width: 60px;
     height: 40px;
+    margin-right: 200px;
   }
 
   .hamburger-menu{
@@ -765,7 +766,16 @@ footer p {
   .nav-links.active{
     right: 0;
   }
-
+.nav {
+  position: fixed;
+  z-index: 2;
+  padding-bottom: 15px;
+  width: 100%;
+}
+.nav.scrolled{
+  background-color: #ae0900;
+  box-shadow: 1px 1px 3px 3px #fff;
+}
   .btn {
     display: none;
   }
