@@ -31,6 +31,7 @@ body{
 .logo {
   width: 80px;
   height: 60px;
+  cursor: pointer;
 }
 
 .nav ul li {
@@ -747,6 +748,7 @@ footer p {
   }
   .nav-links ul li {
     display: block;
+    padding: 20px 0;
   }
   .nav-links{
     position:fixed;
@@ -774,7 +776,7 @@ footer p {
 }
 .nav.scrolled{
   background-color: #ae0900;
-  box-shadow: 1px 1px 3px 3px #fff;
+  box-shadow: 1px 1px 2px 2px #fff;
 }
   .btn {
     display: none;

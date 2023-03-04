@@ -215,6 +215,7 @@ form textarea:focus {
   }
   .nav-links ul li {
     display: block;
+    padding: 20px 0;
   }
   .nav-links{
     position:fixed;
