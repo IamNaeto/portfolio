@@ -224,7 +224,7 @@ a {
 }
 
 button {
-  background-color: firebrick;
+  background-color: #ae0900;
   border: 2px solid transparent;
   padding: 13px 30px;
   border-radius: 10px;
@@ -288,7 +288,7 @@ h5 {
 }
 
 .card .button {
-  background-color: firebrick;
+  background-color: #ae0900;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
@@ -468,7 +468,7 @@ color: #000;
     color: #05073a;
   }
   .testimonial-col:hover .fa{
-    color: #f44336;
+    color: #ae0900;
   }
 .testimonial-col img {
   height: 40px;
@@ -502,7 +502,7 @@ color: #000;
 }
 
 .testimonials .hire button {
-  background-color: firebrick;
+  background-color: #ae0900;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
