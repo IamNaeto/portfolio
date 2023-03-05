@@ -166,6 +166,7 @@ nav .fa {
 }
 .img-sec{
   position: relative;
+  visibility: hidden;
 }
 .line-design{
   border: 10px solid #fff;
@@ -182,6 +183,7 @@ nav .fa {
 
 .about-text {
   width: 550px;
+  visibility: hidden;
 }
 
 .main {
@@ -242,7 +244,9 @@ button:hover {
   width: 100%;
   padding: 100px 0px;
 }
-
+.title{
+  visibility: hidden;
+}
 .title h2 {
   color: white;
   font-size: 75px;
@@ -268,6 +272,7 @@ button:hover {
   position: relative;
   overflow: hidden;
   text-align: center;
+  visibility: hidden;
 }
 .card .fa{
   font-size: 40px;
@@ -318,6 +323,7 @@ h5 {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  visibility: hidden;
 }
 #projects h3 {
   font-size: 1.2rem;
@@ -325,6 +331,7 @@ h5 {
   letter-spacing: 2px;
   text-align: center;
   text-shadow: none;
+  visibility: hidden;
 }
 .row {
   display: flex;
@@ -337,6 +344,7 @@ h5 {
   margin: 30px;
   box-shadow: 1px 1px 4px 4px #fff;
   transition: transform 0.4s;
+  visibility: hidden;
 }
 .project-col button {
   margin: 10px 0px 10px 10px;
@@ -384,6 +392,7 @@ cursor: pointer;
   letter-spacing: 2px;
   color: #fff;
   text-align: center;
+  visibility: hidden;
 }
 .skillset h3 {
   font-size: 1.2rem;
@@ -392,6 +401,7 @@ cursor: pointer;
   text-align: center;
   margin-bottom: 50px;
   margin-top: 20px;
+  visibility: hidden;
 }
 .skillset .langbox{
   width: 100%;
@@ -421,6 +431,7 @@ cursor: pointer;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 50px;
+  visibility: hidden;
 }
 
 /* -------------testimonials---------- */
@@ -434,6 +445,7 @@ cursor: pointer;
   letter-spacing: 2px;
   color: #fff;
   text-align: center;
+  visibility: hidden;
 }
 .testimonials h3 {
   font-size: 1.2rem;
@@ -441,6 +453,7 @@ cursor: pointer;
   letter-spacing: 2px;
   text-shadow: none;
   margin-top: 10px;
+  visibility: hidden;
 }
 .testimonials .row {
   margin: 0px 100px;
@@ -455,6 +468,7 @@ cursor: pointer;
   display: flex;
   margin: 50px 20px 100px;
   transition: 0.4s;
+  visibility: hidden;
 }
 .testimonial-col:hover{
     background: #fff3f3;
@@ -529,6 +543,9 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.arrow-up{
+  visibility: hidden;
+}
 .arrow-up .fa{
   font-size: 40px;
   margin-bottom: 30px;
@@ -543,6 +560,7 @@ footer p {
   width: 800px;
   text-align: center;
   line-height: 26px;
+  visibility: hidden;
 }
 .socials .fa {
   font-size: 30px;
@@ -558,6 +576,7 @@ footer p {
 .end {
   color: #fff;
   font-size: 14px;
+  visibility: hidden;
 }
 
 /* ------------Media Query------------- */
@@ -940,7 +959,11 @@ footer p {
     margin-bottom: 50px;
     width: 200px;
     margin: 10px 50px 50px;
+  } 
+  .testimonials .hire{
+    visibility: none;
   }
+
   /* Footer */
   footer p {
     font-size: 14px;
