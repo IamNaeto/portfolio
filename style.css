@@ -514,7 +514,9 @@ color: #000;
   margin-bottom: 20px;
   text-shadow: none;
 }
-
+.testimonials .hire{
+  visibility: hidden;
+}
 .testimonials .hire button {
   background-color: #ae0900;
   color: white;
@@ -960,9 +962,6 @@ footer p {
     width: 200px;
     margin: 10px 50px 50px;
   } 
-  .testimonials .hire{
-    visibility: none;
-  }
 
   /* Footer */
   footer p {
