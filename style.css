@@ -28,12 +28,17 @@ body{
   padding-left: 8%;
   padding-right: 8%;
 }
-.logo {
-  width: 80px;
-  height: 60px;
+.nav .logo {
   cursor: pointer;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 1s;
+    display:inline-flex;
 }
-
+.nav .logo:hover{
+  transform: scale(1.2);
+}
 .nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -66,7 +71,7 @@ body{
   font-weight: bold;
   padding: 10px 25px;
   border-radius: 10px;
-  transition: transform 0.4s;
+  transition: transform 1s;
   box-shadow: 2px 2px 1px 1px #fff;
 }
 
@@ -131,6 +136,7 @@ nav .fa {
 .btn2:hover {
   background-color: transparent;
   border: 2px solid #fff;
+  transition: 1s;
 }
 
 .content .socials .fa{
@@ -147,9 +153,11 @@ nav .fa {
 }
 .content .arrow-down .fa:hover{
   transform: scale(1.3);
+  transition: 1s;
 }
 .content .socials .fa:hover{
   transform: scale(1.3);
+  transition: 1s;
 }
 
 /* About Styling */
@@ -230,7 +238,7 @@ button {
   border: 2px solid transparent;
   padding: 13px 30px;
   border-radius: 10px;
-  transition: 0.4s;
+  transition: 1s;
   box-shadow: 2px 2px 1px 1px #fff;
 }
 
@@ -300,7 +308,7 @@ h5 {
   font-weight: bold;
   padding: 13px 22px;
   border-radius: 10px;
-  transition: 0.4s;
+  transition: 1s;
   box-shadow: 2px 2px 1px 1px #fff;
 }
 
@@ -343,7 +351,7 @@ h5 {
   width: 70%;
   margin: 30px;
   box-shadow: 1px 1px 4px 4px #fff;
-  transition: transform 0.4s;
+  transition: transform 1s;
   visibility: hidden;
 }
 .project-col button {
@@ -415,6 +423,7 @@ cursor: pointer;
   color: #fff;
   text-align: center;
   transition: transform 0.4s;
+  transition: 1s;
 }
 .langbox h1{
   font-size: 24px;
@@ -525,7 +534,7 @@ color: #000;
   font-weight: bold;
   padding: 13px 30px;
   border-radius: 10px;
-  transition: 0.4s;
+  transition: 1s;
   box-shadow: 2px 2px 1px 1px #fff;
   margin-bottom: 100px;
 }
@@ -553,7 +562,7 @@ footer {
 }
 .arrow-up .fa:hover {
   transform: scale(1.3);
-  transition: 0.3s;
+  transition: 1s;
 }
 footer p {
   color: white;
@@ -571,7 +580,7 @@ footer p {
 
 .socials .fa:hover {
   transform: scale(1.3);
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .end {
@@ -722,11 +731,6 @@ footer p {
     background-size: cover;
     background-position: center;
   }
-  .logo {
-    width: 50px;
-    height: 40px;
-    margin-right: 200px;
-  }
 
   .hamburger-menu{
     height: 50px;
@@ -791,7 +795,8 @@ footer p {
 .nav {
   position: fixed;
   z-index: 2;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   width: 100%;
 }
 .nav.scrolled{
