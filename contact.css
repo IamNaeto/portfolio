@@ -20,11 +20,21 @@ body {
   padding-left: 8%;
   padding-right: 8%;
 }
-.logo {
-  width: 80px;
-  height: 60px;
+.nav a{
+  text-decoration: none;
 }
-
+.nav .logo {
+    cursor: pointer;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 1s;
+    display:inline-flex;
+    color: #fff;
+}
+.nav .logo:hover{
+  transform: scale(1.2);
+}
 .nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -171,10 +181,6 @@ form textarea:focus {
   body {
     height: 100%;
   }
-  .logo {
-    width: 50px;
-    height: 40px;
-  }
   .hamburger-menu {
     height: 50px;
     width: 50px;
@@ -238,7 +244,8 @@ form textarea:focus {
   .nav {
     position: fixed;
     z-index: 2;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     width: 100%;
     top: 0;
   }
