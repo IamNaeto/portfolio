@@ -476,7 +476,7 @@ cursor: pointer;
   padding: 15px;
   display: flex;
   margin: 50px 20px 100px;
-  transition: 0.4s;
+  transition: 1s;
   visibility: hidden;
 }
 .testimonial-col:hover{
