@@ -64,7 +64,7 @@ body{
 }
 
 .btn {
-  background-color: firebrick;
+  background-color:#ae0900;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
@@ -574,8 +574,7 @@ footer p {
 }
 .socials .fa {
   font-size: 30px;
-  margin: 20px 10px;
-  padding-bottom: 15px;
+  margin: 15px 10px;
 }
 
 .socials .fa:hover {
@@ -587,6 +586,7 @@ footer p {
   color: #fff;
   font-size: 14px;
   visibility: hidden;
+  margin-bottom: 15px;
 }
 
 /* ------------Media Query------------- */
@@ -801,6 +801,7 @@ footer p {
 }
 .nav.scrolled{
   background-color: #ae0900;
+  /* background-color: #541427; */
   box-shadow: 1px 1px 2px 2px #fff;
 }
   .btn {
