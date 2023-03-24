@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 body{
-  background: linear-gradient(260deg, #05073a, #541427, #961f17, #05073a);
+  background: linear-gradient(260deg, #05073a, #541427, #541427, #961f17, #05073a);
 }
 /* nav styling */
 #home {
@@ -805,7 +805,6 @@ footer p {
 }
 .nav.scrolled{
   background-color: #541427;
-  /* background-color: #541427; */
   box-shadow: 1px 1px 2px 2px #fff;
 }
   .btn {
