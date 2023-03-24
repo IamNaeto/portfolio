@@ -591,7 +591,6 @@ footer p {
   color: #fff;
   font-size: 14px;
   margin-bottom: 15px;
-  visibility: hidden;
 }
 
 /* ------------Media Query------------- */
@@ -786,7 +785,7 @@ footer p {
     height: 100vh;
     width: 55%;
     transition: right .5s;
-    background: #ae0900;
+    background: #541427;
     text-align: left;
     z-index: 2;
   }
@@ -805,7 +804,7 @@ footer p {
   width: 100%;
 }
 .nav.scrolled{
-  background-color: #ae0900;
+  background-color: #541427;
   /* background-color: #541427; */
   box-shadow: 1px 1px 2px 2px #fff;
 }
