@@ -573,6 +573,8 @@ footer p {
   width: 800px;
   text-align: center;
   line-height: 26px;
+}
+.foot-enquires{
   visibility: hidden;
 }
 .socials .fa {
@@ -589,6 +591,7 @@ footer p {
   color: #fff;
   font-size: 14px;
   margin-bottom: 15px;
+  visibility: hidden;
 }
 
 /* ------------Media Query------------- */
