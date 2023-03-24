@@ -387,7 +387,7 @@ cursor: pointer;
 }
 .project-col .text .stacks{
   margin-top: 0;
-  color: #d6d6d6
+  color: #fff;
 }
 /* Skill Set */
 .skillset{
@@ -588,7 +588,6 @@ footer p {
 .end {
   color: #fff;
   font-size: 14px;
-  visibility: hidden;
   margin-bottom: 15px;
 }
 
