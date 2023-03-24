@@ -375,7 +375,7 @@ cursor: pointer;
 .project-col .text h4 {
   color: #fff;
   font-size: 18px;
-  padding: 10px 20px;
+  padding: 0px 20px;
   margin-top: 10px;
   text-align: center;
 }
@@ -385,7 +385,10 @@ cursor: pointer;
   padding: 10px 20px;
   text-align: center;
 }
-
+.project-col .text .stacks{
+  margin-top: 0;
+  color: #d6d6d6
+}
 /* Skill Set */
 .skillset{
   padding: 50px 100px;

@@ -35,4 +35,4 @@ ScrollReveal().reveal(".hire", { duration: 5000 });
 ScrollReveal().reveal(".arrow-up", { duration: 2000 });
 ScrollReveal().reveal(".foot-enquires", { duration: 2000 });
 ScrollReveal().reveal(".socials", { interval: 200 });
-ScrollReveal().reveal(".end", { duration: 2000 });
+ScrollReveal().reveal(".end", { duration: 1000 });
