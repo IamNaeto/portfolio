@@ -18,6 +18,7 @@ body{
   background-image: linear-gradient(rgba(4, 9, 30, 0.226), rgba(4, 9, 30, 0.253)), url(img/DSC_0707\ copy.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .nav {
