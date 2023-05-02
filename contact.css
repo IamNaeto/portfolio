@@ -23,7 +23,7 @@ body {
 .nav a{
   text-decoration: none;
 }
-.nav .logo {
+/* .nav .logo {
     cursor: pointer;
     font-size: 50px;
     text-transform: uppercase;
@@ -33,6 +33,13 @@ body {
     color: #fff;
 }
 .nav .logo:hover{
+  transform: scale(1.2);
+} */
+.nav .hero-logo{
+  transition: 1s;
+  cursor: pointer;
+}
+.nav .hero-logo:hover{
   transform: scale(1.2);
 }
 .nav ul li {
