@@ -23,7 +23,6 @@
     <nav id="home">
       <div class="nav">
         <a href="#home">
-          <!-- <i class="fa fa-code logo"></i> -->
           <img src="img/hero-logo.svg" alt="" class="hero-logo">
         </a>
         <div class="nav-links" id="navLinks">
@@ -37,11 +36,8 @@
             <li><a href="contact.html">Contact Me</a></li>
           </ul>
         </div>
-        <div class="hamburger-menu">
-          <div class="ham-bar bar-top"></div>
-          <div class="ham-bar bar-mid"></div>
-          <div class="ham-bar bar-bottom"></div>
-        </div>
+        <div class="toggle">
+          <i class="fa fa-toggle-off" id="toggle"></i>
         <a
           href="https://drive.google.com/file/d/1ehEajINPCYhY2xhf4pzbyQYUWXLdKxz1/view?usp=share_link"
           target="_blank"
@@ -49,6 +45,12 @@
           class="btn"
           >Download Resume</a
         >
+        </div>
+        <div class="hamburger-menu">
+          <div class="ham-bar bar-top"></div>
+          <div class="ham-bar bar-mid"></div>
+          <div class="ham-bar bar-bottom"></div>
+        </div>
       </div>
 
       <header class="content">
@@ -75,7 +77,7 @@
           </a>
 
           <a href="https://web.facebook.com/egesionu.charles/" target="_blank">
-            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-facebook-square"></i>
           </a>
 
           <a href="https://www.instagram.com/iam_naetocharlie/" target="_blank">
@@ -91,12 +93,12 @@
           >Download Resume</a
         >
 
-        <div class="arrow-down">
-          <a href="#about">
-            <i class="fa fa-arrow-circle-down"></i>
-          </a>
+        <div class="explore">
+          <a href="#about">Explore <i class="fa fa-arrow-circle-down"></i></a>
         </div>
       </header>
+
+      <!-- <img src="img/pattern-rings (1).svg" alt="" class="partern"> -->
     </nav>
 
     <!-- About Start -->
@@ -104,7 +106,6 @@
       <div class="main">
         <div class="img-sec">
           <img src="img/Charlie.jpg" alt="Charles Image" />
-          <div class="line-design"></div>
         </div>
         <div class="about-text">
           <h2>About Me</h2>
@@ -142,8 +143,8 @@
 
       <div class="box">
         <div class="card">
-          <!-- <img class="cardimg" src="img/menu-bar-1-48.png" alt="menu bar"> -->
-          <i class="fa fa-code"></i>
+          <div>
+            <i class="fa fa-code"></i>
           <h5>Web Development</h5>
           <div class="pra">
             <p>
@@ -153,21 +154,21 @@
               I program it to work across all devices. Secondly, I design it to
               be fast and interactive as possible.
             </p>
-
-            <p style="text-align: center">
-              <a
-                href="#"
-                class="button"
-                onclick="alert('For more information, please checkout my resume!')"
-                >Read More...</a
-              >
-            </p>
+          </div>
+          </div>
+          <div class="card-btn">
+            <a
+            href="#"
+            class="button"
+            onclick="alert('For more information, please checkout my resume!')"
+            >Read More...</a
+          >
           </div>
         </div>
 
         <div class="card">
-          <!-- <img class="cardimg" src="img/user.png" alt="user"> -->
-          <i class="fa fa-cogs"></i>
+          <div>
+            <i class="fa fa-cogs"></i>
           <h5>Software Engineering</h5>
           <div class="pra">
             <p>
@@ -175,25 +176,22 @@
               I'm currently a software engineering student at ALX Holberton
               school of computer science/software engineering.
             </p>
-            <br \ />
-            <br \ />
-            <br \ />
-            <br \ />
+          </div>
+          </div>
 
-            <p style="text-align: center">
-              <a
+          <div class="card-btn">
+            <a
                 href=""
                 class="button"
                 onclick="alert('For more information, please checkout my resume!')"
                 >Read More...</a
               >
-            </p>
           </div>
         </div>
 
         <div class="card">
-          <!-- <img class="cardimg" src="img/bell.png" alt="menu bar"> -->
-          <i class="fa fa-user"></i>
+          <div>
+            <i class="fa fa-user"></i>
           <h5>Virtual Assistant</h5>
           <div class="pra">
             <p>
@@ -203,15 +201,16 @@
               calls, making travel arrangements, managing social media accounts
               and managing email accounts.
             </p>
+          </div>
+          </div>
 
-            <p style="text-align: center">
-              <a
+          <div class="card-btn">
+            <a
                 href=""
                 class="button"
                 onclick="alert('For more information, please checkout my resume!')"
                 >Read More...</a
               >
-            </p>
           </div>
         </div>
       </div>
@@ -220,9 +219,6 @@
     <!-- Projects -->
     <main id="projects">
       <h2 class="project-heading">My Projects</h2>
-      <h3 class="project-subheading">
-        Here are some of my projects, you may like.
-      </h3>
       <div class="row">
         <div class="project-col">
           <img src="img/cc-gen-form.png" alt="" />
@@ -233,16 +229,18 @@
               card once the neccessary details are filled.
             </p>
             <h4 class="stacks">HTML | CSS | JavaScript</h4>
-            <button type="button">
-              <a href="https://iamnaeto.github.io/cc_gen-form/" target="_blank"
-                >Live Site</a
-              >
-            </button>
-            <button type="button">
-              <a href="https://github.com/IamNaeto/cc_gen-form.git"
-                >Source Code</a
-              >
-            </button>
+            <div class="control">
+              <button type="button">
+                <a href="https://iamnaeto.github.io/cc_gen-form/" target="_blank"
+                  >View Site</a
+                >
+              </button>
+              <button type="button">
+                <a href="https://github.com/IamNaeto/cc_gen-form.git"
+                  >View Code</a
+                >
+              </button>
+            </div>
           </div>
         </div>
 
@@ -251,24 +249,26 @@
           <div class="text">
             <h4>UDEMY CLONE</h4>
             <p>
-              A replicated version of Udemy landing page design which shows the
+              A replicated version of Udemy landing page which shows the
               courses, goals, features and other content of the page.
             </p>
             <h4 class="stacks">HTML | CSS | JavaScript</h4>
-            <button type="button">
-              <a href="https://iamnaeto.github.io/udemy/" target="_blank"
-                >Live Site</a
-              >
-            </button>
-            <button type="button">
-              <a href="https://github.com/IamNaeto/udemy.git" target="_blank"
-                >Source Code</a
-              >
-            </button>
+            <div class="control">
+              <button type="button">
+                <a href="https://iamnaeto.github.io/udemy/" target="_blank"
+                  >View Site</a
+                >
+              </button>
+              <button type="button">
+                <a href="https://github.com/IamNaeto/udemy.git" target="_blank"
+                  >View Code</a
+                >
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="project-col">
+        <!-- <div class="project-col">
           <img src="img/look.png" alt="" />
           <div class="text">
             <h4>LOOK</h4>
@@ -288,7 +288,7 @@
               >
             </button>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="row">
@@ -301,22 +301,24 @@
               growing and tracking investments.
             </p>
             <h4 class="stacks">HTML | CSS | JavaScript</h4>
-            <button type="button">
-              <a
-                href="https://crappo-free-crypto-site.netlify.app/"
-                target="_blank"
-                >Live Site</a
-              >
-            </button>
-            <button type="button">
-              <a href="https://github.com/IamNaeto/crappo.git" target="_blank"
-                >Source Code</a
-              >
-            </button>
+            <div class="control">
+              <button type="button">
+                <a
+                  href="https://crappo-free-crypto-site.netlify.app/"
+                  target="_blank"
+                  >View Site</a
+                >
+              </button>
+              <button type="button">
+                <a href="https://github.com/IamNaeto/crappo.git" target="_blank"
+                  >View Code</a
+                >
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="project-col">
+        <!-- <div class="project-col">
           <img src="img/edford.png" alt="" />
           <div class="text">
             <h4>EDUFORD</h4>
@@ -336,7 +338,7 @@
               >
             </button>
           </div>
-        </div>
+        </div> -->
 
         <div class="project-col">
           <img src="img/what2eat.png" alt="" />
@@ -347,22 +349,24 @@
               delivered to a customer on order.
             </p>
             <h4 class="stacks">HTML | CSS | JavaScript</h4>
-            <button type="button">
-              <a href="https://what2eat-kitchen.netlify.app/" target="_blank"
-                >Live Site</a
-              >
-            </button>
-            <button type="button">
-              <a href="https://github.com/IamNaeto/what2eat.git" target="_blank"
-                >Source Code</a
-              >
-            </button>
+            <div class="control">
+              <button type="button">
+                <a href="https://what2eat-kitchen.netlify.app/" target="_blank"
+                  >View Site</a
+                >
+              </button>
+              <button type="button">
+                <a href="https://github.com/IamNaeto/what2eat.git" target="_blank"
+                  >View Code</a
+                >
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="project-col">
+        <!-- <div class="project-col">
           <img src="img/zuri.png" alt="" />
           <div class="text">
             <h4>ZURI PAGE</h4>
@@ -385,7 +389,7 @@
               >
             </button>
           </div>
-        </div>
+        </div> -->
 
         <div class="project-col">
           <img src="img/fashionistar.png" alt="" />
@@ -396,20 +400,22 @@
               kids and ladies assorted wears which are delivered on order.
             </p>
             <h4 class="stacks">HTML | CSS | JavaScript</h4>
-            <button type="button">
-              <a
-                href="https://fashionistar-shopping.netlify.app/"
-                target="_blank"
-                >Live Site</a
-              >
-            </button>
-            <button type="button">
-              <a
-                href="https://github.com/IamNaeto/fashionistar.git"
-                target="_blank"
-                >Source Code</a
-              >
-            </button>
+            <div class="control">
+              <button type="button">
+                <a
+                  href="https://fashionistar-shopping.netlify.app/"
+                  target="_blank"
+                  >View Site</a
+                >
+              </button>
+              <button type="button">
+                <a
+                  href="https://github.com/IamNaeto/fashionistar.git"
+                  target="_blank"
+                  >View Code</a
+                >
+              </button>
+            </div>
           </div>
         </div>
 
@@ -422,20 +428,22 @@
               displays users' number of followers, following, posts, follow button and message button.
             </p>
             <h4 class="stacks">HTML | CSS | CSS Animation</h4>
-            <button type="button">
-              <a
-                href="https://iamnaeto.github.io/animated-profile-card/"
-                target="_blank"
-                >Live Site</a
-              >
-            </button>
-            <button type="button">
-              <a
-                href="https://github.com/IamNaeto/animated-profile-card.git"
-                target="_blank"
-                >Source Code</a
-              >
-            </button>
+            <div class="control">
+              <button type="button">
+                <a
+                  href="https://iamnaeto.github.io/animated-profile-card/"
+                  target="_blank"
+                  >View Site</a
+                >
+              </button>
+              <button type="button">
+                <a
+                  href="https://github.com/IamNaeto/animated-profile-card.git"
+                  target="_blank"
+                  >View Code</a
+                >
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -450,24 +458,20 @@
           <div class="langbox">
             <i class="devicon-html5-plain"></i>
             <h1 class="langtop">HTML5</h1>
-            <hr />
           </div>
 
           <div class="langbox">
             <i class="devicon-bootstrap-plain"></i>
             <h1 class="langtop">Bootsrap</h1>
-            <hr />
           </div>
 
           <div class="langbox">
             <i class="devicon-c-plain"></i>
             <h1 class="langtop">C</h1>
-            <hr />
           </div>
           <div class="langbox">
             <i class="devicon-git-plain"></i>
             <h1 class="langtop">Git</h1>
-            <hr />
           </div>
         </div>
 
@@ -475,25 +479,21 @@
           <div class="langbox">
             <i class="devicon-css3-plain"></i>
             <h1 class="langtop">CSS3</h1>
-            <hr />
           </div>
 
           <div class="langbox">
             <i class="devicon-tailwindcss-plain"></i>
             <h1 class="langtop">Tailwind CSS</h1>
-            <hr />
           </div>
 
           <div class="langbox">
             <i class="devicon-python-plain"></i>
             <h1 class="langtop">Python</h1>
-            <hr />
           </div>
 
           <div class="langbox">
             <i class="devicon-github-original"></i>
             <h1 class="langtop">GitHub</h1>
-            <hr />
           </div>
         </div>
 
@@ -501,25 +501,21 @@
           <div class="langbox">
             <i class="devicon-javascript-plain"></i>
             <h1 class="langtop">JavaScript</h1>
-            <hr />
           </div>
 
           <div class="langbox">
             <i class="devicon-react-original"></i>
             <h1 class="langtop">React JS</h1>
-            <hr />
           </div>
 
           <div class="langbox">
             <i class="devicon-vscode-plain"></i>
             <h1 class="langtop">VS Code</h1>
-            <hr />
           </div>
 
           <div class="langbox">
             <i class="devicon-figma-plain"></i>
             <h1 class="langtop">Figma</h1>
-            <hr />
           </div>
         </div>
       </div>
@@ -541,12 +537,14 @@
               is incredibly easy to maintain. We could not be more happy with
               our new website! Thanks Charles!
             </p>
-            <h3>Christine Berkley</h3>
+            <div>
+              <h3>Christine Berkley</h3>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star-half-o"></i>
+            </div>
           </div>
         </div>
 
@@ -571,7 +569,7 @@
         </div>
       </div>
       <div class="hire">
-        <h4>Need A Beautiful Website?</h4>
+        <h4>Need To Get In Touch?</h4>
         <button type="button">
           <a href="contact.html">Let's Talk!</a>
         </button>
@@ -586,38 +584,10 @@
         </a>
       </div>
       <p class="foot-enquires">
-        For more enquires please click on the socials below to connect with me.
+        Made With <i class="fa fa-heart"></i> By Charles Obimnaetochukwu Egesionu
       </p>
 
-      <div class="socials">
-        <a href="https://wa.me/2348178200220" target="_blank">
-          <i class="fa fa-whatsapp"></i>
-        </a>
-        <a
-          href="https://linkedin.com/in/charles-obimnaetochukwu-egesionu/"
-          target="_blank"
-        >
-          <i class="fa fa-linkedin-square"></i>
-        </a>
-
-        <a href="https://twitter.com/naetocharlie/" target="_blank">
-          <i class="fa fa-twitter-square"></i>
-        </a>
-
-        <a href="https://www.instagram.com/iam_naetocharlie/" target="_blank">
-          <i class="fa fa-instagram"></i>
-        </a>
-
-        <a href="https://web.facebook.com/egesionu.charles/" target="_blank">
-          <i class="fa fa-facebook-official"></i>
-        </a>
-
-        <a href="https://github.com/IamNaeto" target="_blank">
-          <i class="fa fa-github"></i>
-        </a>
-      </div>
-
-      <p class="end">&#169; 2023 Charles Obimnaetochukwu Egesionu</p>
+      <p class="end"> All Rights Reserved &#169; 2023 </p>
     </footer>
 
     <script src="script.js"></script>
