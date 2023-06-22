@@ -6,7 +6,6 @@
 
 * {
   box-sizing: border-box;
-  /* font-family: "Roboto", sans-serif; */
   font-family: 'Space Grotesk', sans-serif;
   padding: 0;
   margin: 0;
@@ -44,16 +43,20 @@ body{
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 15px 5% 15px 5%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--main-bg-color);
+  box-shadow: var(--box-shadow);
+  
 }
 .nav .hero-logo{
   transition: 1s;
@@ -117,13 +120,16 @@ nav .fa {
   cursor: pointer;
   transition: 0.5s;
 }
+.hamburger-menu{
+  display: none;
+}
 
 /* header styling */
 .content {
   margin-top: 100px;
   position: absolute;
   top: 40%;
-  left: 6%;
+  left: 7%;
   transform: translateY(-50%);
   text-align: center;
 }
@@ -213,7 +219,7 @@ nav .fa {
 /* About Styling */
 #about {
   width: 100%;
-  padding: 20px 5%;
+  padding: 100px 5% 20px 5%;
 }
 
 #about img {
@@ -291,7 +297,7 @@ button:hover {
 /* Service Styling */
 #service {
   width: 100%;
-  padding: 50px 5%;
+  padding: 65px 5% 50px;
 }
 .title h2 {
   color: var(--primary-text-color);
@@ -366,7 +372,7 @@ h5 {
 
 /* Projects Styling */
 #projects {
-  padding: 50px 5%;
+  padding: 90px 5% 50px;
   align-items: center;
   justify-content: space-between;
 }
@@ -462,7 +468,7 @@ background: linear-gradient(90deg, rgba(252,176,11,0.8) 30%, rgba(0,212,255,0.8)
 }
 /* Skill Set */
 .skillset{
-  padding: 50px 5%;
+  padding: 90px 5% 50px;
 }
 .set-container{
   display: flex;
@@ -527,15 +533,15 @@ background: linear-gradient(90deg, rgba(252,176,11,0.8) 30%, rgba(0,212,255,0.8)
 
 /* -------------testimonials---------- */
 .testimonials {
-  margin: 30px 0;
   text-align: center;
-  padding: 0 5%;
+  padding: 100px 5% 30px;
   width: 100%;
   background-image: url(img/pattern-ring2.svg);
   background-size: 35%;
   background-repeat: no-repeat;
   background-position-x: left;
-  background-position-y: center;
+  background-position-y:center;
+  background-attachment: fixed;
 }
 .testimonials h2 {
   font-size: 40px;
@@ -665,136 +671,7 @@ footer p {
 }
 
 /* ------------Media Query------------- */
-@media screen and (max-width: 1300px) {
-  .logo {
-    width: 70px;
-    height: 50px;
-  }
-  h1 {
-    font-size: 40px;
-    overflow: hidden;
-  }
-  h4 {
-    font-size: 24px;
-  }
-  .btn2 {
-    padding: 15px 30px;
-    width: 200px;
-    text-align: center;
-  }
-  .nav ul li {
-    padding: 10px 5px;
-    font-size: 8px;
-  }
-  .btn {
-    display: none;
-  }
-  .btn2 {
-    display: block;
-  }
-  .btn2 {
-    padding: 15px 30px;
-    width: 300px;
-    text-align: center;
-  }
-  /* About */
-  .main {
-    overflow: hidden;
-  }
-  #about img {
-    height: auto;
-    width: 280px;
-    overflow: hidden;
-    left: 20px;
-    margin-right: 40px;
-  }
-  .line-design{
-    width: 85%;
-    bottom: -15px;
-    right: 45px;
-  }
 
-  .about-text {
-    width: auto;
-  }
-  .about-text h2 {
-    font-size: 60px;
-  }
-  button {
-    margin-bottom: 50px;
-  }
-  /* Services */
-  .box {
-    overflow: hidden;
-  }
-  .card {
-    height: 400px;
-    width: 300px;
-    padding: 10px 10px;
-  }
-  .title h2 {
-    font-size: 60px;
-    width: auto;
-  }
-
-  h5 {
-    color: white;
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  .pra p {
-    line-height: 20px;
-  }
-  /* Projects */
-  #projects {
-    padding: 50px 20px;
-  }
-  .row {
-    overflow: hidden;
-  }
-
-  #projects h2 {
-    font-size: 60px;
-  }
-  #projects h3 {
-    font-size: 1rem;
-  }
-  .project-col {
-    width: 90%;
-    margin: 30px 10px;
-  }
-    .project-col button {
-    margin: 10px 0px 10px 10px;
-    padding: 12px 18px;
-  }
-
-  /* Testimonials */
-  .testimonials h2 {
-    font-size: 60px;
-  }
-  .testimonials h3 {
-    font-size: 18px;
-  }
-  .testimonials .row {
-    margin: 0px;
-    overflow: hidden;
-  }
-  .testimonial-col {
-    margin: 50px 20px 50px;
-    overflow: hidden;
-  }
-  .testimonial-col p {
-    padding: 0;
-    font-size: 14px;
-  }
-
-  .testimonial-col h3 {
-    margin-top: 15px;
-    text-align: left;
-    margin-bottom: 15px;
-  }
-}
 /* Mobile View */
 @media screen and (max-width: 750px) {
   #home {
@@ -808,6 +685,7 @@ footer p {
   }
 
   .hamburger-menu{
+    display: block;
     height: 50px;
     width: 50px;
     position: relative;
@@ -819,7 +697,7 @@ footer p {
   .ham-bar{
     width: 70%;
     height: 4px;
-    background-color: #fff;
+    background-color: var(--special-color);
     border-radius: 25px;
     position: absolute;
     top: 50%;
