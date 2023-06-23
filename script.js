@@ -7,12 +7,6 @@ hamMenu.addEventListener("click", () => {
 });
 // Hamburger script end
 
-// Nav Bar Scrolling Change
-window.addEventListener("scroll", function () {
-  let navbar = document.querySelector(".nav");
-  navbar.classList.toggle("scrolled", window.scrollY > 0);
-});
-
 
 /*********
  *  Light and Dark Mood Toggle
