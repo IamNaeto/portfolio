@@ -26,12 +26,8 @@ function updateModeBasedOnTime() {
 
   if (hour >= 6 && hour < 18) {
     document.body.classList.remove('dark-mode');
-    // toggleButton.classList.remove('fa-toggle-off');
-    // toggleButton.classList.add('fa-toggle-on');
   } else {
     document.body.classList.add('dark-mode');
-    // toggleButton.classList.remove('fa-toggle-on');
-    // toggleButton.classList.add('fa-toggle-off');
   }
 }
 
