@@ -95,6 +95,7 @@ body {
   font-size: 30px;
   cursor: pointer;
   transition: 0.5s;
+  color: var(--primary-text-color);
 }
 
 .hamburger-menu {
@@ -339,6 +340,10 @@ form textarea:focus {
     width: 100%;
     top: 0;
   }
+  
+  .nav .fa-toggle-off {
+    font-size: 40px;
+  }
 
   #contact {
     padding: 0 5%;
@@ -348,7 +353,7 @@ form textarea:focus {
   }
 
   .col-box span {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .contact-col {
@@ -372,7 +377,7 @@ form textarea:focus {
   }
 
   #footer {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     padding-top: 0;
   }
 

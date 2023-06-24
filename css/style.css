@@ -113,10 +113,6 @@ body {
   box-shadow: none;
 }
 
-nav .fa {
-  display: none;
-}
-
 .toggle {
   display: flex;
   align-items: center;
@@ -132,6 +128,7 @@ nav .fa {
   margin-right: 30px;
   cursor: pointer;
   transition: 0.5s;
+  color: var(--primary-text-color);
 }
 
 .hamburger-menu {
@@ -226,7 +223,7 @@ nav .fa {
   border-bottom: 3px solid var(--special-color);
   transition: 0.3s;
   color: var(--primary-text-color);
-  transition: 1s;
+  transition: 1s ease-in-out;
   padding-bottom: 5px;
 }
 
@@ -239,8 +236,7 @@ nav .fa {
 }
 
 .content .socials .fa:hover {
-  box-shadow: none;
-  color: var(--special-color);
+  transform: scale(1.2);
 }
 
 /* About Styling */
@@ -450,7 +446,7 @@ h5 {
 }
 
 .control button {
-  border: 2px solid var(--primary-text-color);
+  border: #263041;
   background-color: #263041;
   cursor: pointer;
 }
@@ -713,8 +709,7 @@ h5 {
 }
 
 .arrow-up .fa:hover {
-  box-shadow: none;
-  color: var(--special-color);
+  transform: scale(1.2);
 }
 
 /* Footer Styling */
@@ -870,7 +865,7 @@ footer p {
 
   .nav-links {
     position: fixed;
-    top: 70px;
+    top: 71px;
     right: -100%;
     height: 360px;
     width: 100%;
@@ -910,6 +905,10 @@ footer p {
     text-align: center;
   }
 
+  .nav .fa-toggle-off {
+    font-size: 40px;
+  }
+  
   .content {
     margin-top: 100px;
     left: 3%;
