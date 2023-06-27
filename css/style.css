@@ -36,6 +36,22 @@ body {
   transition: background-color var(--transition-duration);
 }
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-bg-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--special-color);
+  border-radius: 25px;
+}
+
 /* nav styling */
 #home {
   height: 100vh;
