@@ -107,8 +107,9 @@ body {
   justify-content: space-between;
 }
 
-.nav .fa-toggle-off {
+.toggle #theme-btn {
   font-size: 30px;
+  margin-right: 30px;
   cursor: pointer;
   transition: 0.5s;
   color: var(--primary-text-color);
@@ -357,7 +358,7 @@ form textarea:focus {
     top: 0;
   }
   
-  .nav .fa-toggle-off {
+  .toggle #theme-btn{
     font-size: 40px;
   }
 
