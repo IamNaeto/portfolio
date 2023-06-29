@@ -16,8 +16,16 @@ const toggleButton = document.querySelector('#theme-btn');
 
 toggleButton.addEventListener('click', function() {
   document.body.classList.toggle('dark-mode');
-  toggleButton.innerText = document.body.classList.contains("dark-mode") ? "light_mode" : "dark_mode";
+  updateToggleButton();
 });
+
+function updateToggleButton() {
+  if (document.body.classList.contains("dark-mode")) {
+    toggleButton.innerText = "light_mode";
+  } else {
+    toggleButton.innerText = "dark_mode";
+  }
+}
 
 function updateModeBasedOnTime() {
   const now = new Date();
@@ -28,19 +36,23 @@ function updateModeBasedOnTime() {
   } else {
     document.body.classList.add('dark-mode');
   }
+
+  updateToggleButton();
 }
 
 function setManualMode(mode) {
   if (mode === 'light') {
     document.body.classList.remove('dark-mode');
-    toggleButton.innerText = "dark_mode"
   } else if (mode === 'dark') {
     document.body.classList.add('dark-mode');
-    toggleButton.innerText = "light_mode"
   }
+
+  updateToggleButton();
 }
+
 // Calling the function to set the mode based on the current time
 updateModeBasedOnTime();
+
 
 
   // Scroll Reveal Animation
