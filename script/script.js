@@ -59,10 +59,9 @@ updateModeBasedOnTime();
 
 // Hero Section
 let heroText = document.querySelector('.content');
-// let heroImg = document.querySelector('.hero-img');
 
 ScrollReveal().reveal((heroText), {
-scale: 0.85,
+scale: 0.2,
 interval: 500,
 delay: 300,
 reset: true,
@@ -247,11 +246,21 @@ let socials = document.querySelector('.socials');
 let contactFoot = document.querySelector('.contact-foot');
 let contactCol = document.querySelectorAll('.col-box');
 let input = document.querySelectorAll('input');
-let sendBtn = document.querySelectorAll('.btn_one');
-let textarea = document.querySelectorAll('textarea');
+let sendBtn = document.querySelector('.btn_one');
+let textarea = document.querySelector('textarea');
+let colForm = document.querySelector('.col-form');
 
 ScrollReveal().reveal((socials), {
-scale: 0.9,
+  scale: -0.4,
+  delay: 400,
+  reset: true,
+  rotate: {
+  x: 9,
+  z: 9
+  },
+});
+ScrollReveal().reveal((colForm), {
+scale: 0.2,
 delay: 400,
 reset: true,
 easing: 'ease-in',
@@ -259,6 +268,7 @@ viewFactor: 0.3
 });
 
 ScrollReveal().reveal((contactFoot), {
+scale: 0.2,
 delay: 300,
 reset: true,
 easing: 'ease-in',
@@ -266,50 +276,48 @@ viewFactor: 0.3
 });
 
 ScrollReveal().reveal((contactCol), {
-scale: 0.9,
-easing: 'ease-in',
-delay: 500,
-reset: true,
-viewFactor: 0.4
+  scale: -0.4,
+  delay: 400,
+  reset: true,
+  rotate: {
+  x: 9,
+  z: 9
+  },
 });
 
 ScrollReveal().reveal((input), 
 {
-rotate: {
-  x: 10,
+  scale: -0.4,
+  delay: 400,
+  reset: true,
+  rotate: {
+  x: 9,
   z: 9
-},
-delay: 300,
-reset: true,
-origin: 'bottom',
-viewFactor: 0.4
+  },
 });
 ScrollReveal().reveal((sendBtn), 
 {
-rotate: {
-  x: 10,
+  scale: -0.4,
+  delay: 400,
+  reset: true,
+  rotate: {
+  x: 9,
   z: 9
-},
-delay: 400,
-reset: true,
-origin: 'bottom',
-viewFactor: 0.4
+  },
 });
 
 ScrollReveal().reveal((textarea), 
 {
-rotate: {
-  x: 10,
+  scale: -0.4,
+  delay: 400,
+  reset: true,
+  rotate: {
+  x: 9,
   z: 9
-},
-delay: 300,
-reset: true,
-viewFactor: 0.4
-
+  },
 });
 
 // Footer section
-// let footLogo = document.querySelector('.footLogo');
 let footEnquires = document.querySelector('.foot-enquires');
 let end = document.querySelectorAll('end');
 
