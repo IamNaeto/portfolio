@@ -54,9 +54,14 @@ function setManualMode(mode) {
 updateModeBasedOnTime();
 
 
+// Footer Date Update
+const currentYearContainer = document.querySelector(".currentYearContainer")
+const date = new Date()
+const currentYear = date.getFullYear()
+currentYearContainer.innerText = currentYear
+
 
 // Scroll Reveal Animation
-
 // Hero Section
 let heroText = document.querySelector('.content');
 
@@ -230,7 +235,7 @@ ScrollReveal().reveal((saysSub), {
   delay: 600,
   reset: true,
   easing: 'ease-in',
-  viewFactor: 0.4
+  viewFactor: 0.3
 });
 
 ScrollReveal().reveal((arrowUp), {
@@ -319,7 +324,7 @@ ScrollReveal().reveal((textarea),
 
 // Footer section
 let footEnquires = document.querySelector('.foot-enquires');
-let end = document.querySelectorAll('end');
+let end = document.querySelectorAll('.end');
 
 ScrollReveal().reveal((footEnquires), {
 scale: 0.85,
@@ -329,21 +334,9 @@ reset: true,
 viewFactor: 0.3
 });
 
-// ScrollReveal().reveal((footLogo), 
-// {
-// rotate: {
-//   x: 10,
-//   z: 9
-// },
-// delay: 300,
-// reset: true,
-// origin: 'bottom',
-// viewFactor: 0.3
-// });
 
 ScrollReveal().reveal((end), {
-origin: 'bottom',
-scale: 0.85,
+scale: 0.45,
 delay: 500,
 reset: true,
 easing: 'ease-in',

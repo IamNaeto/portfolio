@@ -119,6 +119,19 @@ body {
   display: none;
 }
 
+.hero-logo{
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hero-logo span{
+  color: var(--special-color);
+}
+
 #contact {
   width: 100%;
   padding: 50px 5% 0;
