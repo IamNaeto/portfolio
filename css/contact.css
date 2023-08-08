@@ -38,14 +38,12 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--main-bg-color);
+  background: var(--primary-text-color);
   box-shadow: var(--box-shadow);
-  border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--special-color);
-  border-radius: 25px;
 }
 
 /* nav styling */
@@ -191,7 +189,7 @@ body {
 /* Form */
 form input {
   width: 100%;
-  margin: 20px 1%;
+  margin: 20px 0;
   background: transparent;
   border: 0px;
   border-bottom: 3px solid var(--primary-text-color);
@@ -212,7 +210,7 @@ form textarea::placeholder {
 
 form textarea {
   width: 100%;
-  margin: 20px 1%;
+  margin: 20px 0;
   padding: 8px 10px;
   border: 0px;
   border-bottom: 3px solid var(--primary-text-color);
@@ -251,24 +249,44 @@ form textarea:focus {
   transform: scale(1.3);
 }
 
-.btn_one {
-  background-color: var(--special-color);
-  color: white;
+button {
+  background-color: transparent;
+  color: var(--primary-text-color);
+  border: 3px solid var(--primary-text-color);
+  padding: 15px 30px;
   font-size: 20px;
-  text-decoration: none;
-  border: 2px solid var(--special-color);
   font-weight: bold;
-  padding: 10px 100px;
   border-radius: 10px;
-  transition: 0.4s;
-  box-shadow: var(--box-shadow);
-  margin-bottom: 20px;
+  position: relative;
   width: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.btn_one:hover {
-  box-shadow: none;
-  cursor: pointer;
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-text-color);
+  transition: 1s;
+  z-index: -1;
+}
+
+button:hover::before {
+  left: 0;
+}
+
+button:hover{
+  color: var(--main-bg-color);
+}
+
+button .fa{
+  margin-left: 10px;
+  font-size: 25px;
 }
 
 #footer {
@@ -281,6 +299,12 @@ form textarea:focus {
   font-size: 17px;
   text-align: center;
   line-height: 20px;
+}
+
+@media screen and (max-width: 965px) {
+  .hero-logo{
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 760px) {

@@ -40,14 +40,12 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--main-bg-color);
+  background: var(--primary-text-color);
   box-shadow: var(--box-shadow);
-  border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--special-color);
-  border-radius: 25px;
 }
 
 /* nav styling */
@@ -112,19 +110,37 @@ body {
 }
 
 .btn {
-  background-color: var(--special-color);
-  color: white;
+  color: var(--primary-text-color);
   text-decoration: none;
-  border: 2px solid var(--special-color);
+  border: 3px solid var(--primary-text-color);
   font-weight: bold;
   padding: 15px 25px;
   border-radius: 10px;
   transition: 1s;
-  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-text-color);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  left: 0;
 }
 
 .btn:hover {
   box-shadow: none;
+  color: var(--main-bg-color);
 }
 
 .toggle {
@@ -161,8 +177,8 @@ body {
 .content {
   margin-top: 100px;
   position: absolute;
-  top: 40%;
-  left: 7%;
+  top: 45%;
+  width: 100%;
   transform: translateY(-50%);
   text-align: center;
 }
@@ -201,26 +217,43 @@ body {
   font-size: 20px;
 }
 
-.btn2 {
-  background-color: var(--special-color);
-  color: white;
-  text-decoration: none;
-  border: 2px solid var(--special-color);
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
-  margin: 30px auto;
-  display: none;
-}
-
 .btn2 .fa {
   display: inline-block;
 }
 
+.btn2 {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  border: 3px solid var(--primary-text-color);
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin: 30px auto;
+  display: none;
+  transition: 1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-text-color);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btn2:hover::before {
+  left: 0;
+}
+
 .btn2:hover {
   box-shadow: none;
-  transition: 1s;
+  color: var(--main-bg-color);
 }
 
 .content .socials .fa {
@@ -321,24 +354,43 @@ body {
 }
 
 a {
-  color: white;
+  color: var(--primary-text-color);
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
 
 button {
-  background-color: var(--special-color);
-  border: 2px solid var(--special-color);
-  padding: 13px 30px;
+  background-color: transparent;
+  border: 3px solid var(--primary-text-color);
+  padding: 15px 30px;
   border-radius: 10px;
   transition: 1s;
-  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-button:hover {
-  box-shadow: none;
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-text-color);
+  transition: 0.5s;
+  z-index: -1;
 }
+
+button:hover::before {
+  left: 0;
+}
+
+button:hover a{
+  color: var(--main-bg-color);
+}
+
 
 /* Service Styling */
 #service {
@@ -377,6 +429,27 @@ button:hover {
   position: relative;
   overflow: hidden;
   text-align: center;
+  transition: background 1s, box-shadow 1s;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(200deg, rgba(252, 176, 11, 0.8) 30%, rgba(0, 212, 255, 0.8) 100%);
+  transition: height 0.5s ease-in;
+  z-index: -1;
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 .card:nth-child(2) {
@@ -403,22 +476,6 @@ h5 {
 
 .card .card-btn {
   margin-bottom: 20px;
-}
-
-.card .button {
-  background-color: var(--special-color);
-  color: #FFFFFF;
-  text-decoration: none;
-  border: 2px solid var(--special-color);
-  font-weight: bold;
-  padding: 13px 22px;
-  border-radius: 10px;
-  transition: 1s;
-  box-shadow: var(--box-shadow);
-}
-
-.card .button:hover {
-  box-shadow: none;
 }
 
 /* Projects Styling */
@@ -455,6 +512,7 @@ h5 {
   box-shadow: var(--box-shadow);
   transition: 0.5s;
   position: relative;
+  overflow: hidden;
 }
 
 .project-col:nth-child(1) {
@@ -467,18 +525,8 @@ h5 {
   justify-content: space-evenly;
 }
 
-.control button {
-  border: #263041;
-  background-color: #263041;
-  cursor: pointer;
-}
-
 .control button a {
-  transition: 0.5s;
-}
-
-.control button:hover a {
-  color: var(--special-color);
+  transition: 1s;
 }
 
 .project-col button {
@@ -493,23 +541,23 @@ h5 {
 
 .project-col .text {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 0;
+  left: -100%;
   background: linear-gradient(90deg, rgba(252, 176, 11, 0.8) 30%, rgba(0, 212, 255, 0.8) 100%);
   height: 100%;
   width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: auto 0;
   border-radius: 10px;
-  transition: 0.5s;
-  display: none;
+  transition: 1s;
 }
 
 .project-col:hover .text {
   cursor: pointer;
-  display: flex;
+  left: 0;
 }
 
 .project-col .text h4 {
@@ -648,14 +696,31 @@ h5 {
   padding: 20px;
   display: flex;
   margin-bottom: 50px;
-  transition: 1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-col::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(150deg, rgba(252, 176, 11, 0.8) 30%, rgba(0, 212, 255, 0.8) 100%);
+  transition: width 0.5s ease-in;
+  z-index: -1;
+}
+
+.testimonial-col:hover::before {
+  width: 100%;
 }
 
 .testimonial-col:hover {
-  background: var(--special-color);
   box-shadow: none;
   cursor: pointer;
 }
+
 
 .testimonial-col img {
   height: 40px;
@@ -682,18 +747,6 @@ h5 {
   transition: 0.4s;
 }
 
-.testimonial-col:hover p {
-  color: #fff;
-}
-
-.testimonial-col:hover h3 {
-  color: #fff;
-}
-
-.testimonial-col:hover .fa {
-  color: #fff;
-}
-
 .testimonials h4 {
   color: var(--primary-text-color);
   font-size: 40px;
@@ -703,20 +756,7 @@ h5 {
 }
 
 .testimonials .hire button {
-  background-color: var(--special-color);
-  color: white;
-  text-decoration: none;
-  border: 2px solid var(--special-color);
-  font-weight: bold;
-  padding: 13px 30px;
-  border-radius: 10px;
-  transition: 1s;
-  box-shadow: var(--box-shadow);
   margin-bottom: 80px;
-}
-
-.testimonials .hire button:hover {
-  box-shadow: none;
   cursor: pointer;
 }
 
@@ -824,6 +864,12 @@ footer p {
   }
 }
 
+@media screen and (max-width: 965px) {
+  .hero-logo{
+    font-size: 30px;
+  }
+}
+
 /* Mobile View */
 @media screen and (max-width: 885px) {
   #home {
@@ -831,7 +877,7 @@ footer p {
     width: 100%;
     background-size: 100%;
   }
-
+  
   .hamburger-menu {
     display: block;
     height: 50px;
@@ -1010,9 +1056,12 @@ footer p {
   .box {
     flex-direction: column;
   }
+  .card button{
+    margin: 0;
+  }
 
   .card {
-    height: 450px;
+    height: 480px;
     width: 100%;
   }
 
