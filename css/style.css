@@ -112,9 +112,9 @@ body {
 .btn {
   color: var(--primary-text-color);
   text-decoration: none;
-  border: 3px solid var(--primary-text-color);
+  border: 2px solid var(--primary-text-color);
   font-weight: bold;
-  padding: 15px 25px;
+  padding: 13px 15px;
   border-radius: 10px;
   transition: 1s;
   position: relative;
@@ -162,7 +162,7 @@ body {
 }
 
 .hero-logo{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--primary-text-color);
   font-style: normal;
@@ -177,7 +177,7 @@ body {
 .content {
   margin-top: 100px;
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 100%;
   transform: translateY(-50%);
   text-align: center;
@@ -224,9 +224,9 @@ body {
 .btn2 {
   color: var(--primary-text-color);
   text-decoration: none;
-  border: 3px solid var(--primary-text-color);
+  border: 2px solid var(--primary-text-color);
   font-weight: bold;
-  padding: 15px 25px;
+  padding: 13px 15px;
   border-radius: 10px;
   margin: 30px auto;
   display: none;
@@ -358,12 +358,13 @@ a {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  transition: 1s;
 }
 
 button {
   background-color: transparent;
-  border: 3px solid var(--primary-text-color);
-  padding: 15px 30px;
+  border: 2px solid var(--primary-text-color);
+  padding: 13px 15px;
   border-radius: 10px;
   transition: 1s;
   position: relative;
@@ -531,7 +532,7 @@ h5 {
 
 .project-col button {
   margin: 10px 0px 10px 10px;
-  padding: 13px 25px;
+  padding: 10px 15px;
 }
 
 .project-col img {
@@ -978,9 +979,7 @@ footer p {
   }
   
   .content {
-    margin-top: 100px;
-    left: 3%;
-    right: 3%;
+    margin-top: 45px;
   }
 
   .content h1 {

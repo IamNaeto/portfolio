@@ -118,7 +118,7 @@ body {
 }
 
 .hero-logo{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--primary-text-color);
   font-style: normal;
@@ -252,14 +252,14 @@ form textarea:focus {
 button {
   background-color: transparent;
   color: var(--primary-text-color);
-  border: 3px solid var(--primary-text-color);
-  padding: 15px 30px;
+  border: 2px solid var(--primary-text-color);
+  padding: 12px 15px;
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
   position: relative;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -282,6 +282,7 @@ button:hover::before {
 
 button:hover{
   color: var(--main-bg-color);
+  transition: 1s;
 }
 
 button .fa{
@@ -290,7 +291,7 @@ button .fa{
 }
 
 #footer {
-  padding-top: 50px;
+  padding: 30px 0;
   width: 100%;
 }
 
