@@ -149,8 +149,8 @@ body {
   justify-content: space-between;
 }
 
-.toggle #theme-btn {
-  font-size: 30px;
+.toggle #toggle {
+  font-size: 35px;
   margin-right: 30px;
   cursor: pointer;
   transition: 0.5s;
@@ -177,7 +177,7 @@ body {
 .content {
   margin-top: 100px;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: 100%;
   transform: translateY(-50%);
   text-align: center;
@@ -974,12 +974,12 @@ footer p {
     text-align: center;
   }
 
-  .toggle #theme-btn{
+  .toggle #toggle{
     font-size: 40px;
   }
   
   .content {
-    margin-top: 45px;
+    margin-top: 30px;
   }
 
   .content h1 {

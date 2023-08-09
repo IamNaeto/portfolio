@@ -12,20 +12,12 @@ hamMenu.addEventListener("click", () => {
  *  Light and Dark Mood Toggle
  * *******/
 // Get the toggle button element
-const toggleButton = document.querySelector('#theme-btn');
+const toggleButton = document.querySelector('#toggle');
 
 toggleButton.addEventListener('click', function() {
   document.body.classList.toggle('dark-mode');
-  updateToggleButton();
+  toggleButton.classList.toggle('fa-toggle-on');
 });
-
-function updateToggleButton() {
-  if (document.body.classList.contains("dark-mode")) {
-    toggleButton.innerText = "light_mode";
-  } else {
-    toggleButton.innerText = "dark_mode";
-  }
-}
 
 function updateModeBasedOnTime() {
   const now = new Date();
@@ -36,20 +28,19 @@ function updateModeBasedOnTime() {
   } else {
     document.body.classList.add('dark-mode');
   }
-
-  updateToggleButton();
 }
 
 function setManualMode(mode) {
   if (mode === 'light') {
     document.body.classList.remove('dark-mode');
+    toggleButton.classList.remove('fa-toggle-off');
+    toggleButton.classList.add('fa-toggle-on');
   } else if (mode === 'dark') {
     document.body.classList.add('dark-mode');
+    toggleButton.classList.remove('fa-toggle-on');
+    toggleButton.classList.add('fa-toggle-off');
   }
-
-  updateToggleButton();
 }
-
 // Calling the function to set the mode based on the current time
 updateModeBasedOnTime();
 
