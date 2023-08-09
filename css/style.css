@@ -177,7 +177,7 @@ body {
 .content {
   margin-top: 100px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%;
   transform: translateY(-50%);
   text-align: center;
