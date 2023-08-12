@@ -64,7 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5% 15px 5%;
+  padding: 8px 5% 8px 5%;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -162,15 +162,17 @@ body {
 }
 
 .hero-logo{
-  font-size: 40px;
-  font-weight: 700;
-  color: var(--primary-text-color);
-  font-style: normal;
-  text-transform: uppercase;
+  width: 70px;
+  background-color: #263041;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-logo span{
-  color: var(--special-color);
+.hero-logo img{
+  width: 100%;
+  border-radius: 100px;
 }
 
 /* header styling */
@@ -527,7 +529,20 @@ h5 {
 }
 
 .control button a {
+  color: #263041;;
   transition: 1s;
+}
+
+.control button{
+  border: 2px solid #263041;
+}
+
+.control button:hover{
+  background-color: #263041;
+}
+
+.control button:hover a{
+  color: #ECF0F3;
 }
 
 .project-col button {
@@ -865,18 +880,16 @@ footer p {
   }
 }
 
-@media screen and (max-width: 965px) {
-  .hero-logo{
-    font-size: 30px;
-  }
-}
-
 /* Mobile View */
 @media screen and (max-width: 885px) {
   #home {
     height: 100vh;
     width: 100%;
     background-size: 100%;
+  }
+
+  .hero-logo{
+    width: 50px;
   }
   
   .hamburger-menu {
