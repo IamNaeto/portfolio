@@ -20,7 +20,7 @@
   <title>Charles O. Egesionu Portfolio</title>
   <link rel="stylesheet" href="../css/contact.css" />
   <link rel="icon" href="../img/COE_Favicon.png" type="image/png" />
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
@@ -58,20 +58,20 @@
 
   <main class="contact" id="contact">
     <div class="contact-col">
-      <div class="col-contact">
-        <div class="col-box">
+      <div class="col-contact" data-aos="slide-up" data-aos-duration="1000">
+        <div class="col-box" data-aos="slide-right" data-aos-duration="1000">
           <i class="fa fa-phone"></i>
           <span> &nbsp;+2348147371491</span>
         </div>
-        <div class="col-box">
+        <div class="col-box" >
           <i class="fa fa-envelope"></i>
           <span> &nbsp;egesionucharlesobimnaeto@gmail.com</span>
         </div>
-        <div class="col-box">
+        <div class="col-box" data-aos="slide-right" data-aos-duration="1000">
           <i class="fa fa-map-marker"></i>
           <span>&nbsp; Imo State, Nigeria</span>
         </div>
-        <div class="socials">
+        <div class="socials" data-aos="slide-up" data-aos-duration="1000">
           <a href="https://wa.me/2348178200220" target="_blank">
             <i class="fa fa-whatsapp"></i>
           </a>
@@ -94,12 +94,12 @@
         </div>
       </div>
 
-      <div class="col-form">
+      <div class="col-form" data-aos="zoom-in-down" data-aos-duration="1000">
         <form action="https://formspree.io/f/xbjerpdq" method="POST">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required /><br />
-          <textarea name="message" placeholder="Your Message" required rows="5"></textarea><br />
-          <button class="btn_one" type="submit">Send <i class="fa fa-paper-plane-o"></i></button>
+          <input type="text" name="name" placeholder="Name" required data-aos="flip-right" data-aos-duration="1000"/>
+          <input type="email" name="email" placeholder="Email" required data-aos="flip-right" data-aos-duration="1000"/><br />
+          <textarea name="message" placeholder="Your Message" required rows="5" data-aos="flip-right" data-aos-duration="1000"></textarea><br />
+          <button class="btn_one" type="submit" >Send <i class="fa fa-paper-plane-o"></i></button>
         </form>
       </div>
     </div>
@@ -111,6 +111,13 @@
   </footer>
 
   <script src="../script/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      mirror: true,
+    });
+  </script>
 </body>
 
 </html>
