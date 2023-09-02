@@ -1,4 +1,5 @@
-# Welcome to my portfolio repo
+# Welcome To My Portfolio Website Repo
+![image](https://github.com/IamNaeto/portfolio/assets/105589308/a36d4744-ce7a-42b5-91ab-024016d41437)
 - This portfolio website contains all you need to know about me. It's developed with ``HTML`` and ``CSS`` and ``JavaScript`` and it's purely responsive and interactive.
 
 	- Live Link :: [Go Live](https://www.iamnaeto.tech/)
