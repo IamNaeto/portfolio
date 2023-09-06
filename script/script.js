@@ -50,3 +50,21 @@ const currentYearContainer = document.querySelector(".currentYearContainer")
 const date = new Date()
 const currentYear = date.getFullYear()
 currentYearContainer.innerText = currentYear
+
+// Custom Cursor
+const cursors = document.querySelectorAll('.cursor');
+
+window.addEventListener("mousemove", function (event) {
+    const posX = event.clientX;
+    const posY = event.clientY;
+
+    // cursor dot position
+    cursors[0].style.left = `${posX}px`;
+    cursors[0].style.top = `${posY}px`;
+
+    // cursor outline position
+    setTimeout(function () {
+        cursors[1].style.left = `${posX}px`;
+        cursors[1].style.top = `${posY}px`;
+    }, 80);
+});
