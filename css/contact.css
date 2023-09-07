@@ -303,6 +303,40 @@ button .fa{
   line-height: 20px;
 }
 
+@keyframes shine {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-text-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.1s ease;
+  z-index: 999;
+  opacity: 0.5;
+  animation: shine 1s infinite;
+}
+
+#cursor-outline {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid var(--primary-text-color);
+  box-shadow: 0 0 10px var(--special-color);
+}
+
 @media screen and (max-width: 965px) {
   .hero-logo{
     font-size: 30px;
@@ -445,5 +479,11 @@ button .fa{
     font-size: 12px;
     width: 100%;
     line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cursor{
+    display: none;
   }
 }

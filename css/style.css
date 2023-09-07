@@ -354,11 +354,6 @@ body {
   overflow: hidden;
 }
 
-.img-sec img {
-  transition: transform 0.3s ease;
-  animation: tilt-animation 3s infinite alternate;
-}
-
 @keyframes tilt-animation {
   0% {
     transform: rotate(-5deg);
@@ -368,6 +363,10 @@ body {
   }
 }
 
+.img-sec img {
+  transition: transform 0.3s ease;
+  animation: tilt-animation 3s infinite alternate;
+}
 
 .about-text {
   width: 60%;
@@ -1066,7 +1065,6 @@ footer p {
   .content h3 span {
     font-size: 28px;
   }
-
   .main {
     flex-direction: column;
   }
@@ -1250,5 +1248,11 @@ footer p {
 
   .arrow-up .fa {
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cursor{
+    display: none;
   }
 }
