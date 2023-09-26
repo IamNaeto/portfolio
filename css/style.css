@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@800&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
 
 * {
@@ -18,7 +16,7 @@
   --primary-text-color: #263041;
   --shadow-color: #9fa1a5;
   --special-color: #FCB00B;
-  --box-shadow: 1px 2px 10px var(--shadow-color);
+  --box-shadow: 1px 1px 5px var(--shadow-color);
 }
 
 body.dark-mode {
@@ -26,7 +24,7 @@ body.dark-mode {
   --main-bg-color: #263041;
   --primary-text-color: #ECF0F3;
   --shadow-color: #fff;
-  transition: background-color var(--transition-duration);
+  transition: var(--transition-duration);
 }
 
 body {
@@ -37,7 +35,7 @@ body {
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -189,16 +187,13 @@ body {
 .content h1 {
   color: var(--special-color);
   margin: 20px 0px 20px;
-  font-size: 50px;
-  text-transform: uppercase;
+  font-size: 60px;
   font-weight: 800;
-  font-family: 'Roboto Serif', serif;
   text-align: center;
 }
 
 .content h1>span {
   color: var(--primary-text-color);
-  font-family: 'Roboto Serif', serif;
   font-weight: 800;
 }
 
@@ -482,7 +477,7 @@ button:hover a{
   position: relative;
   overflow: hidden;
   text-align: center;
-  transition: background 1s, box-shadow 1s;
+  transition: 1s;
 }
 
 .card::before {
@@ -546,7 +541,14 @@ h5 {
   margin: 0 auto;
   border-bottom: 3px solid var(--special-color);
   width: 255px;
+}
 
+.project-subheading{
+  font-size: 1.2rem;
+  color: var(--special-color);
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .row {
@@ -758,6 +760,7 @@ h5 {
   width: 49%;
   border-radius: 10px;
   text-align: left;
+  background-color: var(--main-bg-color);
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
@@ -1047,11 +1050,11 @@ footer p {
   }
 
   .content h1 {
-    font-size: 30px;
+    font-size: 38px;
   }
 
   .content h1 span {
-    font-size: 28px;
+    font-size: 38px;
   }
 
   .content h4 {

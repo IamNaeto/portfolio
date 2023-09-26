@@ -56,7 +56,7 @@
     </div>
   </nav>
 
-  <main class="contact" id="contact" data-aos="slide-right" data-aos-duration="1000">
+  <main class="contact" id="contact" data-aos="slide-right">
     <div class="contact-col">
       <div class="col-contact">
         <div class="col-box">
@@ -71,7 +71,7 @@
           <i class="fa fa-map-marker"></i>
           <span>&nbsp; Imo State, Nigeria</span>
         </div>
-        <div class="socials" data-aos="slide-up" data-aos-duration="1000">
+        <div class="socials" data-aos="slide-up">
           <a href="https://wa.me/2348178200220" target="_blank">
             <i class="fa fa-whatsapp"></i>
           </a>
@@ -94,11 +94,11 @@
         </div>
       </div>
 
-      <div class="col-form" data-aos="zoom-in-down" data-aos-duration="1000">
+      <div class="col-form" data-aos="zoom-in-down">
         <form action="https://formspree.io/f/xbjerpdq" method="POST">
-          <input type="text" name="name" placeholder="Name" required data-aos="flip-right" data-aos-duration="1000"/>
-          <input type="email" name="email" placeholder="Email" required data-aos="flip-right" data-aos-duration="1000"/><br />
-          <textarea name="message" placeholder="Your Message" required rows="5" data-aos="flip-right" data-aos-duration="1000"></textarea><br />
+          <input type="text" name="name" placeholder="Name" required data-aos="flip-right"/>
+          <input type="email" name="email" placeholder="Email" required data-aos="flip-right"/><br />
+          <textarea name="message" placeholder="Your Message" required rows="5" data-aos="flip-right"></textarea><br />
           <button class="btn_one" type="submit" >Send <i class="fa fa-paper-plane-o"></i></button>
         </form>
       </div>
@@ -120,6 +120,8 @@
       once: false,
       mirror: true,
       easing: "ease-in-out-cubic",
+      offset: 20,
+      duration: 1000,
     });
   </script>
 </body>
