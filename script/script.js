@@ -68,3 +68,45 @@ window.addEventListener("mousemove", function (event) {
         cursors[1].style.top = `${posY}px`;
     }, 80);
 });
+
+// ShootingStars and stars function
+document.addEventListener('DOMContentLoaded',
+    function createStarsAndShootingStar() {
+        const body = document.body;
+
+        // Create stars
+        for (let i = 0; i < 150; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            body.appendChild(star);
+        }
+
+        // Create shooting star
+        const shootingStar = document.createElement('div');
+        shootingStar.className = 'shooting-star';
+        body.appendChild(shootingStar);
+    });
+
+  document.addEventListener('DOMContentLoaded', function() {
+      const shootingStar = document.querySelector('.shooting-star');
+  
+      function getRandomPosition() {
+          const top = Math.random() * window.innerHeight;
+          const left = Math.random() * window.innerWidth;
+          return { top, left };
+      }
+  
+      function animateShootingStar() {
+          const position = getRandomPosition();
+          shootingStar.style.top = `${position.top}px`;
+          shootingStar.style.left = `${position.left}px`;
+          shootingStar.style.animation = 'shootingStar 1s linear infinite';
+  
+          setTimeout(animateShootingStar, Math.random() * 5000 + 3000); // Randomize appearance time
+      }
+  
+      animateShootingStar();
+  });
+  

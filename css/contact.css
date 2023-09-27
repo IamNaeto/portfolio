@@ -28,6 +28,7 @@ body.dark-mode {
 }
 
 body {
+  overflow-x: hidden;
   background: var(--main-bg-color);
   transition: background-color var(--transition-duration);
 }
@@ -317,8 +318,8 @@ button .fa{
 
 .cursor {
   position: fixed;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   background-color: var(--primary-text-color);
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -330,12 +331,54 @@ button .fa{
 }
 
 #cursor-outline {
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   background: transparent;
   border: 2px solid var(--primary-text-color);
   box-shadow: 0 0 10px var(--special-color);
 }
+
+/* Create a star animation */
+@keyframes twinkling {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Style the stars */
+.star {
+  position: absolute;
+  background: #ECF0F3;
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  animation: twinkling 3s infinite;
+}
+
+
+/* Create a shooting star animation */
+@keyframes shootingStar {
+  0% {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100px) translateY(200px) rotate(20deg);
+  }
+}
+
+/* Style the shooting star */
+.shooting-star {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background: #ECF0F3;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  opacity: 0;
+  animation: shootingStar 1s linear infinite;
+}
+
 
 @media screen and (max-width: 965px) {
   .hero-logo{
