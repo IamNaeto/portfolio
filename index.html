@@ -35,8 +35,25 @@
     }
 
   setTimeout(redirectToHomePage, 3000);
+
+  const body = document.body;
+
+    // Function to set the theme based on the time of day
+    function setTheme() {
+      const currentTime = new Date().getHours();
+
+      if (currentTime >= 18 || currentTime < 6) {
+        // Night mode (use dark mode styles)
+        body.classList.add('dark-mode');
+      } else {
+        // Day mode (use light mode styles)
+        body.classList.remove('dark-mode');
+      }
+    }
+
+    // Initialize the theme based on the time of day
+    setTheme();
   </script>
-  <script src="./script/script.js"></script>
 </body>
 
 </html>

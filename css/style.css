@@ -1320,7 +1320,6 @@ footer p {
   width: 100%;
   height: 100%;
   background-color: var(--main-bg-color);
-  z-index: 200; /* Background color for the loader page */
 }
 
 .loader {
@@ -1328,7 +1327,7 @@ footer p {
   animation: spin 2s linear infinite;
   padding: 0 0.5rem;
   border-radius: 100%;
-  background-color: var(--primary-text-color);
+  background-color: #263041;
 }
 
 .rotating-img {
