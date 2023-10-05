@@ -110,3 +110,26 @@ document.addEventListener('DOMContentLoaded',
       animateShootingStar();
   });
   
+
+
+  // Loader script
+  document.addEventListener("DOMContentLoaded", function () {
+    // Hide the loader initially
+    document.getElementById("loader-wrapper").style.display = "none";
+  });
+  
+  // Show the loader when the page starts loading
+  window.addEventListener("load", function () {
+    // Show the loader
+    document.getElementById("loader-wrapper").style.display = "flex";
+  
+    // Automatically fade out the loader after 3 seconds
+    setTimeout(function () {
+      document.getElementById("loader-wrapper").style.opacity = "0";
+      setTimeout(function () {
+        // Hide the loader completely
+        document.getElementById("loader-wrapper").style.display = "none";
+      }, 1000); // Assuming your fade-out animation duration is 1 second
+    }, 2000); // 2 seconds delay before fading out
+  });
+  
