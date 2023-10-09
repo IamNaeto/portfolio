@@ -930,6 +930,10 @@ footer p {
   transform: translateY(-10px);
 }
 
+.back-top-btn:hover {
+  transform: scale(1.2);
+}
+
 /* ------------Media Query------------- */
 @media screen and (max-width: 1211px) {
   .nav ul li {
