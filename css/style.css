@@ -867,7 +867,7 @@ h5 {
 .arrow-up .fa {
   font-size: 40px;
   margin-bottom: 30px;
-  padding: 10px 12px;
+  padding: 8px 12px;
   border-radius: 100%;
   color: var(--primary-text-color);
   background-color: var(--main-bg-color);
@@ -905,6 +905,29 @@ footer p {
   color: var(--primary-text-color);
   font-size: 14px;
   margin-bottom: 15px;
+}
+
+/* back to top styling */
+.back-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  color: var(--primary-text-color);
+  background-color: var(--main-bg-color);
+  box-shadow: var(--box-shadow);
+  font-size: 30px;
+  padding: 6px 12px;
+  border-radius: 100%;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;;
+}
+
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
 }
 
 /* ------------Media Query------------- */
@@ -1288,6 +1311,14 @@ footer p {
   .arrow-up .fa {
     margin-top: 50px;
   }
+
+/* back to top styling */
+.back-top-btn {
+  bottom: 30px;
+  right: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -1300,7 +1331,7 @@ footer p {
   .testimonial-col:hover {
     box-shadow: var(--box-shadow);
   }
-  
+
   .cursor{
     display: none;
   }

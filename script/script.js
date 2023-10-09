@@ -111,6 +111,25 @@ document.addEventListener('DOMContentLoaded',
   });
   
 
+  // Function to control arrow-up
+  const backTopBtn = document.querySelector(".back-top-btn");
+  const arrowUpDiv = document.querySelector(".arrow-up");
+  
+  window.addEventListener("scroll", function () {
+    // Check if the user has scrolled past 100 pixels
+    if (window.scrollY >= 100) {
+      backTopBtn.classList.add("active");
+    } else {
+      backTopBtn.classList.remove("active");
+    }
+  
+    // Check if the user has reached the "arrow-up" div
+    const arrowUpDivRect = arrowUpDiv.getBoundingClientRect();
+    if (arrowUpDivRect.top <= window.innerHeight) {
+      backTopBtn.classList.remove("active");
+    }
+  });  
+
 
   // Loader script
   document.addEventListener("DOMContentLoaded", function () {
