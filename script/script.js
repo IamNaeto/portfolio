@@ -123,13 +123,13 @@ document.addEventListener('DOMContentLoaded',
     // Show the loader
     document.getElementById("loader-wrapper").style.display = "flex";
   
-    // Automatically fade out the loader after 3 seconds
+    // Automatically fade out the loader after 4 seconds
     setTimeout(function () {
       document.getElementById("loader-wrapper").style.opacity = "0";
       setTimeout(function () {
         // Hide the loader completely
         document.getElementById("loader-wrapper").style.display = "none";
-      }, 1000); // Assuming your fade-out animation duration is 1 second
-    }, 2000); // 2 seconds delay before fading out
+      }, 1000);
+    }, 3000); // 3 seconds delay before fading out
   });
   
