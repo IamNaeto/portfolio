@@ -335,6 +335,19 @@ body {
   color: var(--special-color);
 }
 
+@keyframes rotateRightDownRight {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+}
+
+.animated {
+    animation: rotateRightDownRight 2s linear infinite;
+}
+
 .content .socials .fa:hover {
   transform: scale(1.2);
 }
@@ -872,7 +885,8 @@ h5 {
   color: var(--primary-text-color);
   background-color: var(--main-bg-color);
   box-shadow: var(--box-shadow);
-  transition: 1s;
+  transition: 0.5 ease;
+  animation: beat 2s infinite;
 }
 
 .arrow-up .fa:hover {
@@ -921,7 +935,8 @@ footer p {
   z-index: 3;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s ease;;
+  transition: 0.5s ease;
+  animation: beat 2s infinite;
 }
 
 .back-top-btn.active {
@@ -930,8 +945,16 @@ footer p {
   transform: translateY(-10px);
 }
 
-.back-top-btn:hover {
-  transform: scale(1.2);
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* ------------Media Query------------- */
