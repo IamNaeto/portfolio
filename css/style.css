@@ -504,6 +504,7 @@ button:hover a{
   width: 100%;
   padding: 100px 5% 50px;
   color: var(--primary-text-color);
+  overflow-x: hidden;
 }
 
 .journey-heading {
@@ -689,7 +690,7 @@ button:hover a{
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  height: 450px;
+  height: 470px;
   width: 35%;
   padding: 20px 25px;
   box-shadow: var(--box-shadow);
@@ -1132,6 +1133,7 @@ footer p {
   .card {
     width: 35%;
     padding: 20px 10px;
+    height: 520px;
   }
 
   .nav .fa-toggle-off {
@@ -1381,13 +1383,22 @@ footer p {
   .journey-history-right .journey-container, .journey-history-left .journey-container{
     position: relative;
     width: 100%;
-    border-left: 10px solid var(--primary-text-color);
+    border-left: 9px solid var(--primary-text-color);
     text-align: left;
   }
   
   .journey-history-right .journey-indicator,  .journey-history-left .journey-indicator{
     top: -2px;
-    left: -30px;
+    left: -25px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .journey-history-right .journey-indicator-bottom{
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+    left: -25px;
   }
   
   .journey-title{
@@ -1402,13 +1413,13 @@ footer p {
     align-items: start;
     justify-content: start;
     width: 100%;
-    margin-left: 15px;
+    margin-left: 6px;
   }
   
   .journey-history-left .journey-card,  .journey-history-right .journey-card{
     margin: 15px 0;
     align-items: start;
-    width: 96%;
+    width: 95%;
     margin-left: 20px;
   }
 
@@ -1430,7 +1441,7 @@ footer p {
   }
 
   .card {
-    height: 480px;
+    height: 470px;
     width: 100%;
   }
 
